@@ -17,7 +17,7 @@
   <header class="p-4">
     <!-- WhatsApp Floating Button -->
     <section class="fixed bottom-4 right-4 z-50">
-      <a href="https://wa.me/9717446526" target="_blank">
+      <a href="https://wa.me/9871717425" target="_blank">
         <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
       </a>
     </section>
@@ -317,82 +317,68 @@
     </div>
   </div>
 </section>
-<!-- Section Trusted -->
+
+  <!-- Section: Trusted By -->
 <section class="bg-gray-100 py-10">
+  <!-- Section Title -->
   <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">TRUSTED BY</h2>
-  <div class="flex overflow-x-auto scroll-smooth space-x-5 snap-x snap-mandatory justify-center animate-scroll" id="scrollable-container">
+
+  <!-- Horizontal Scrolling Container -->
+  <div class="flex overflow-x-auto scroll-smooth space-x-5 snap-x snap-mandatory px-4 md:px-20 justify-center animate-scroll" id="scrollable-container">
     <!-- Brand 1 -->
-    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/bellhopClinet.png" alt="Absa Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/bellhopClinet.png" alt="Bellhop Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 2 -->
-    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/dynamicClinet.png" alt="Bellhop Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/dynamicClinet.png" alt="Dynamic Client Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 3 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/absaClinet.png" alt="QL Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/absaClinet.png" alt="Absa Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 4 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/xqlClinet.png" alt="Coventry University Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/xqlClinet.png" alt="XQL Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 5 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/cloudsr.webp" alt="Dynamic Signal Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/cloudsr.webp" alt="CloudSR Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 6 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/phaseTrust.jpg" alt="Dynamic Signal Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/phaseTrust.jpg" alt="Phase Trust Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 7 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/changeMachineClinet.png" alt="Dynamic Signal Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/changeMachineClinet.png" alt="Change Machine Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
     <!-- Brand 8 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center w-28 h-28">
-      <img src="Image/coventry.jpg" alt="Dynamic Signal Logo" class="object-cover rounded-lg">
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/coventry.jpg" alt="Coventry University Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
-     <!-- Brand 9 -->
-    <div class="bg-white shadow-md rounded-lg p-2 flex justify-center items-center snap-center w-28 h-28">
-      <img src="Image/foogalClinet.png" alt="Dynamic Signal Logo" class="object-cover rounded-lg">
+    <!-- Brand 9 -->
+    <div class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+      <img src="Image/foogalClinet.png" alt="Foogal Logo" class="object-cover rounded-lg w-20 h-20">
     </div>
   </div>
 </section>
 
-
-  <script>
-    // Scroll to a specific slide when a dot is clicked
-    function scrollToSlide(index) {
-      const container = document.getElementById('scrollable-container');
-      const slides = container.children;
-      const slideWidth = slides[0].offsetWidth; // Width of each slide
-      container.scrollTo({
-        right: slideWidth * index,
-        behavior: 'smooth',})
-      container.scrollTo({
-        left: slideWidth * index,
-        behavior: 'smooth',
-      });
+<style>
+  /*Custom animation for smooth scrolling*/ 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-  </script>
-
-  <style>
-    /*Custom animation for smooth scrolling*/ 
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      5% {
-        transform: translateX(-10%);
-      }
+    5% {
+      transform: translateX(-10%);
     }
+  }
 
-    .animate-scroll {
-      animation: scroll 100s linear infinite ;
-    }
-  </style>
-
+  .animate-scroll {
+    animation: scroll 100s linear infinite ;
+  }
+</style>
 
   <!-- Footer -->
   <footer class="bg-blue-950 text-white py-10" style="background-image: url('Image/top_screen.jpg');">

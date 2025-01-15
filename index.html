@@ -10,40 +10,56 @@
 </head>
 
 <body class="font-sans antialiased">
-  <!-- Landing Page -->
-  <section class=" bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
-  <header class="p-4" >
+  
+<!-- Landing Page -->
+<section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
+  <!-- Header Section -->
+  <header class="p-4">
+    <!-- WhatsApp Floating Button -->
     <section class="fixed bottom-4 right-4 z-50">
       <a href="https://wa.me/9717446526" target="_blank">
         <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
       </a>
     </section>
 
-    <div class="flex items-center justify-between">
-      <div class="flex items-center space-x-5 " >
+    <!-- Header Content -->
+    <div class="flex flex-wrap items-center justify-between">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-5 mb-4 md:mb-0">
         <img src="Image/Codm-logo.png" alt="Logo" class="w-12 h-12 rounded">
         <div>
-          <h2 class="text-2xl font-bold text-white ">CODM</h2>
+          <h2 class="text-2xl font-bold text-white">CODM</h2>
           <h6 class="text-sm text-white">Delivering Services Simply</h6>
         </div>
       </div>
-      <div class="flex items-center space-x-2">
-        <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
-        <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
-        <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
-        <h2 class="text-white font-bold text-sm">India: +91 9871717425</h2>
-        <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
-        <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
+
+      <!-- Contact Numbers -->
+      <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 mb-4 md:mb-0">
+        <div class="flex items-center space-x-2">
+          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+          <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+          <h2 class="text-white font-bold text-sm">India: +91 9871717425</h2>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+          <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
+        </div>
       </div>
+
+      <!-- Social Media Icons -->
       <div class="flex items-center space-x-4">
-        <img src="Image/twitter.png" alt="twitter" class="w-6 h-6">
-        <img src="Image\gmail-logo.png" alt="gmail" class="w-6 h-6">
-        <img src="Image/pinterest.png" alt="pinterest" class="w-6 h-6">
-      
+        <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
+        <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
+        <img src="Image/pinterest.png" alt="Pinterest" class="w-6 h-6">
       </div>
     </div>
+
+    <!-- Navigation Bar -->
     <nav class="mt-4">
-      <ul class="flex space-x-10 text-white justify-center font-bold">
+      <ul class="flex flex-wrap justify-center space-x-5 text-white font-bold text-xl">
         <li><a href="#" class="hover:text-blue-500">Home</a></li>
         <li><a href="#" class="hover:text-blue-500">Company</a></li>
         <li><a href="#" class="hover:text-blue-500">Services</a></li>
@@ -53,76 +69,90 @@
     </nav>
   </header>
 
-  <section class="bg-cover bg-center h-96 text-white" >
-    <div class="flex items-center justify-center h-full  " >
-      <div class="text-center justify-center">
-        <h1 class="text-4xl font-bold text-left">How Can We Help Your <span class="text-green-500">Business?</span></h1>
-        <p class="mt-4 text-lg text-sm text-left">Reliable solutions for your token development. Legal advice by experienced specialists <br> ensures the soundness  of your business model at the root of your ICO.</p>
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96 text-white">
+    <div class="flex flex-wrap items-center justify-center h-full px-4">
+      <div class="w-full md:w-1/2 text-center md:text-left ml-4">
+        <h1 class="text-3xl md:text-4xl font-bold">
+          How Can We Help Your <span class="text-green-500">Business?</span>
+        </h1>
+        <p class="mt-4 text-sm md:text-base">
+          Reliable solutions for your token development. Legal advice by experienced specialists
+          ensures the soundness of your business model at the root of your ICO.
+        </p>
+        <a href="#contact" class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded shadow ">
+          Contact Us
+        </a>
       </div>
-      <div class="text-right">
-        <!-- <img src="Image\Earth.png" alt="Earth" class="w-full h-60 relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100"> -->
-      </div>
+      <!-- <div class="w-full md:w-1/2 text-right hidden md:block ">
+        <img src="Image/Earth.png" alt="Earth" class="w-20 h-20  relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100">
+      </div> -->
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="py-10 p-4 ">
-    <div class="grid md:grid-cols-3 gap-6 text-left ml-12 mb-12">
+  <!-- Features Section -->
+  <section class="py-10 px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left pl-12">
       <div>
         <h3 class="text-xl font-semibold text-green-500">Experienced</h3>
         <p class="mt-2 text-white">Reliable solution for <br>your token development.</p>
-      </p>
       </div>
       <div>
         <h3 class="text-xl font-semibold text-green-500">My Partners</h3>
-        <p class="mt-2 text-white text-left">With the US regulations. <br>Legal advice by specialists experienced in ICO.</p>
+        <p class="mt-2 text-white">With the US regulations. <br>Legal advice by specialists experienced in ICO.</p>
       </div>
       <div>
         <h3 class="text-xl font-semibold text-green-500">All Clients</h3>
-        <p class="mt-2 text-white text-left">Ensure soundness of the business<br> model at the root of your ICO.</p>
+        <p class="mt-2 text-white">Ensure soundness of the business<br> model at the root of your ICO.</p>
       </div>
     </div>
   </section>
 </section>
 
-  <!-- Products -->
-  <section class="bg-gray-50 py-10">
-    <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold text-center mb-8">NEW PRODUCT</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="bg-white rounded-lg shadow-md p-0 relative z-0 rounded-lg transition-all duration-300 hover:scale-110">
-                <div class="flex justify-center mb-4">
-                    <img src="Image/FHT.png" alt="Field History Tracking" class="w-40 h-40">
-                </div>
-                <h3 class="text-lg font-bold text-center">FIELD HISTORY TRACKING</h3>
-                <div class="text-center">
-                    <a href="#" class="text-green-500 font-semibold">READ MORE</a>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-white rounded-lg shadow-md p-0 bg-white rounded-lg shadow-md p-6 relative z-0 rounded-lg transition-all duration-300 hover:scale-110 ">
-                <div class="flex justify-center mb-4">
-                    <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="w-40 h-40">
-                </div>
-                <h3 class="text-lg font-bold text-center">EVENT MANAGER PRO</h3>
-                <div class="text-center">
-                    <a href="#" class="text-green-500 font-semibold">READ MORE</a>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-white rounded-lg shadow-md p-0 bg-white rounded-lg shadow-md p-6 relative z-0 rounded-lg transition-all duration-300 hover:scale-110 ">
-                <div class="flex justify-center mb-4">
-                    <img src="Image/Coming-soon.png" alt="Property Mantra" class="w-40 h-40">
-                </div>
-                <h3 class="text-lg font-bold text-center">PROPERTY MANTRA</h3>
-                <div class="text-center">
-                    <a href="#" class="text-green-500 font-semibold">READ MORE</a>
-                </div>
-            </div>
+<!-- Products Section -->
+<section class="bg-gray-50 py-10">
+  <div class="container mx-auto px-4">
+    <!-- Section Title -->
+    <h2 class="text-2xl font-bold text-center mb-8">NEW PRODUCT</h2>
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6 relative transition-all duration-300 hover:scale-105">
+        <div class="flex justify-center mb-4">
+          <img src="Image/FHT.png" alt="Field History Tracking" class="w-40 h-40">
         </div>
+        <h3 class="text-lg font-bold text-center mb-2">FIELD HISTORY TRACKING</h3>
+        <div class="text-center">
+          <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6 relative transition-all duration-300 hover:scale-105">
+        <div class="flex justify-center mb-4">
+          <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="w-40 h-40">
+        </div>
+        <h3 class="text-lg font-bold text-center mb-2">EVENT MANAGER PRO</h3>
+        <div class="text-center">
+          <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md p-6 relative transition-all duration-300 hover:scale-105">
+        <div class="flex justify-center mb-4">
+          <img src="Image/Coming-soon.png" alt="Property Mantra" class="w-40 h-40">
+        </div>
+        <h3 class="text-lg font-bold text-center mb-2">PROPERTY MANTRA</h3>
+        <div class="text-center">
+          <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+
 
   <!-- What We Offer -->
   <section class="py-10 bg-gray-50">

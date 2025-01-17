@@ -8,10 +8,36 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="shortcut icon" href="Image/Codm-logo.png" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Flip Card -->
+  <style>
+    body{
+      
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    .flip-card {
+      perspective: 1000px;
+    }
+    .flip-card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front,
+    .flip-card-back {
+      backface-visibility: hidden;
+    }
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+  </style>
 </head>
 
 <body class="font-sans antialiased">
-  
+
 <!-- Landing Page -->
 <section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
   <!-- Header Section -->
@@ -117,10 +143,10 @@
     <!-- Section Title -->
     <h2 class="text-2xl font-bold text-center mb-8">NEW PRODUCT</h2>
 
-    <!-- Products Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Horizontal Scrollable Products Row -->
+    <div class="flex  space-x-6 px-4 sm:justify-center">
       <!-- Card 1 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-all duration-300 hover:scale-105">
+      <div class="bg-white rounded-lg shadow-md p-6 min-w-[250px] flex-shrink-0 relative transition-all duration-300 hover:scale-105">
         <div class="flex justify-center mb-4">
           <img src="Image/FHT.png" alt="Field History Tracking" class="w-40 h-40">
         </div>
@@ -131,7 +157,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-all duration-300 hover:scale-105">
+      <div class="bg-white rounded-lg shadow-md p-6 min-w-[250px] flex-shrink-0 relative transition-all duration-300 hover:scale-105">
         <div class="flex justify-center mb-4">
           <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="w-40 h-40">
         </div>
@@ -142,7 +168,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-all duration-300 hover:scale-105">
+      <div class="bg-white rounded-lg shadow-md p-6 min-w-[250px] flex-shrink-0 relative transition-all duration-300 hover:scale-105">
         <div class="flex justify-center mb-4">
           <img src="Image/Coming-soon.png" alt="Property Mantra" class="w-40 h-40">
         </div>
@@ -151,10 +177,21 @@
           <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
         </div>
       </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md p-6 min-w-[250px] flex-shrink-0 relative transition-all duration-300 hover:scale-105">
+        <div class="flex justify-center mb-4">
+          <img src="Image\cbd.png" alt="Coming Soon" class="w-40 h-40">
+        </div>
+        <h3 class="text-lg font-bold text-center mb-2">CBD</h3>
+        <div class="text-center">
+          <!-- <a href="https://cbdapp.in/" class="text-green-500 font-semibold hover:underline">READ MORE</a> -->
+          <a href="https://cbdapp.in/" target="_blank" rel="noopener noreferrer" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
 
   <!-- What We Offer -->
   <section class="py-10 bg-gray-50">
@@ -181,7 +218,7 @@
       <div class="p-4 bg-white shadow-lg">
         <h3 class="text-lg font-bold text-center">Data Migration</h3>
         <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center">
-          <li>Data migration/integration in Salesforce: Transferring external 
+        <li>Data migration/integration in Salesforce: Transferring external 
             data into Salesforce using tools like Data Loader </li>
           <!-- <li>Optimizing Sales Processes for Success</li> -->
           <!-- <li>Partner Success Strategies</li> -->
@@ -296,33 +333,72 @@
   </div>
 </section>
 
-<!-- Section testimonial -->
-<section class="bg-gray-100 py-10">
-  <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">CLIENT TESTIMONIALS</h2>
-  <div class="flex flex-wrap justify-center gap-8 px-4">
-    <!-- Testimonial 1 -->
-    <div class="bg-white shadow-lg rounded-lg p-6 text-center max-w-sm">
-      <img src="Image/Men2.png" alt="John Sarleyson" class="w-20 h-20 rounded-full mx-auto mb-4"/>
-      <h3 class="text-lg font-semibold text-blue-950 mb-2">John Sarleyson</h3>
-      <p class="text-sm text-gray-600">
-        Working with CodM was a turning point for us. Their expertise in building customised
-        CRM solutions has transformed our customer interactions.
-      </p>
+    <section class="bg-gray-100 py-10">
+      <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">CLIENT TESTIMONIALS</h2>
+      <div class="flex flex-wrap justify-center gap-8 px-4 overflow-hidden ">
+    <!-- Card 1 -->
+    <div class="flip-card w-72 h-72">
+      <div class="flip-card-inner relative w-full h-full">
+        <!-- Front Side -->
+        <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+          <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <!-- Back Side -->
+        <div class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+          <!-- <h1 class="text-xl font-bold">John Doe</h1> -->
+          <p class="text-sm mt-2">Banking & accounts</p>
+          <p class="text-sm mt-1">"Working with CodM was a turning point for us. Their expertise in building customised CRM solutions has transformed our customer interactions. We now have a unified platform that has streamlined our processes, resulting in improved efficiency and ultimately increased revenue. The team's dedication and innovative approach has exceeded our expectations</p>
+        </div>
+      </div>
     </div>
-    <!-- Testimonial 2 -->
-    <div class="bg-white shadow-lg rounded-lg p-6 text-center max-w-sm">
-      <img src="Image/Men.png" alt="Adam Smith"class="w-20 h-20 rounded-full mx-auto mb-4"/>
-      <h3 class="text-lg font-semibold text-blue-950 mb-2">Adam Smith</h3>
-      <p class="text-sm text-gray-600">
-        CodM has given our company a strategic boost. Customised solutions improved our
-        workflows and supply chain management. Valuable insights for better decision-making.
-      </p>
+
+    <!-- Card 2 -->
+    <div class="flip-card w-72 h-72">
+      <div class="flip-card-inner relative w-full h-full">
+        <!-- Front Side -->
+        <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+          <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <!-- Back Side -->
+        <div class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+          <!-- <h1 class="text-xl font-bold">John Sarleyson</h1> -->
+          <p class="text-sm mt-2">Manufacturing</p>
+          <p class="text-sm mt-1">“Thanks to CodM, our marketing efforts skyrocketed. The personalized CRM solution enhanced our targeting, resulting in higher conversion rates. Smooth transition, user-friendly interface—our marketing team is now more agile than ever”</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="flip-card w-72 h-72">
+      <div class="flip-card-inner relative w-full h-full">
+        <!-- Front Side -->
+        <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+          <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <!-- Back Side -->
+        <div class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+          <!-- <h1 class="text-xl font-bold">John Sarleyson</h1> -->
+          <p class="text-sm mt-2">Healthcare</p>
+          <p class="text-sm mt-1">“CodM has given our company a strategic boost. Customised solutions improved our workflows and supply chain management. Valuable insights for better decision making. Their understanding of our business needs sets them apart”</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card w-72 h-72">
+      <div class="flip-card-inner relative w-full h-full">
+        <!-- Front Side -->
+        <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+          <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <!-- Back Side -->
+        <div class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+          <!-- <h1 class="text-xl font-bold">John Sarleyson</h1> -->
+          <p class="text-sm mt-2">Finance</p>
+          <p class="text-sm mt-1">“CodM transformed our customer service. Their CRM solution centralized information, enabling prompt and personalized support. Increased customer satisfaction is now our norm. They've been a true partner in our journey towards service excellence.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Section: Trusted By -->
-<section class="bg-gray-100 py-10">
+<section class="bg-gray-100 py-10 overflow-hidden">
   <!-- Section Title -->
   <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">TRUSTED BY</h2>
 
@@ -475,7 +551,6 @@
         © All Rights Reserved <span class="text-teal-500">CodM Software</span>
     </div>
 </footer>
-
 
 </body>
 </html>

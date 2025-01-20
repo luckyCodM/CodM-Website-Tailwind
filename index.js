@@ -1,18 +1,66 @@
-/*!
-* jquery.counterup.js 1.0
-*
-* Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
-* Released under the GPL v2 License
-*
-* Date: Nov 26, 2013
-*/(function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);
-return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,
-    i=t.text(),s=/[0-9]+,[0-9]+/.test(i);
-    i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),
-    a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);
-        u&&(l=parseFloat(i/n*f).toFixed(a));
-        if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");
-        e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());
-            if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");
-                t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),
-                r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);
+(function($) {
+    "use strict";
+
+    $.fn.counterUp = function(options) {
+        // Default settings
+        var settings = $.extend({
+            time: 400,
+            delay: 10
+        }, options);
+
+        return this.each(function() {
+            var $this = $(this);
+            var config = settings;
+
+            var counter = function() {
+                var numbers = [];
+                var steps = config.time / config.delay;
+                var value = $this.text();
+                var hasCommas = /[0-9]+,[0-9]+/.test(value);
+
+                // Remove commas from the value
+                value = value.replace(/,/g, "");
+
+                var isInteger = /^[0-9]+$/.test(value);
+                var isFloat = /^[0-9]+\.[0-9]+$/.test(value);
+                var decimalPlaces = isFloat ? (value.split(".")[1] || []).length : 0;
+
+                // Generate step values
+                for (var i = steps; i >= 1; i--) {
+                    var stepValue = parseInt(value / steps * i);
+                    if (isFloat) {
+                        stepValue = parseFloat(value / steps * i).toFixed(decimalPlaces);
+                    }
+                    if (hasCommas) {
+                        while (/\d{4,}/.test(stepValue.toString())) {
+                            stepValue = stepValue.toString().replace(/(\d+)(\d{3})/, "$1,$2");
+                        }
+                    }
+                    numbers.unshift(stepValue);
+                }
+
+                // Store the numbers for animation
+                $this.data("counterup-nums", numbers);
+                $this.text("0");
+
+                // Animate the counter
+                var animate = function() {
+                    $this.text($this.data("counterup-nums").shift());
+                    if ($this.data("counterup-nums").length) {
+                        setTimeout($this.data("counterup-func"), config.delay);
+                    } else {
+                        $this.removeData("counterup-nums").removeData("counterup-func");
+                    }
+                };
+
+                $this.data("counterup-func", animate);
+                setTimeout($this.data("counterup-func"), config.delay);
+            };
+
+            $this.waypoint(counter, {
+                offset: "100%",
+                triggerOnce: true
+            });
+        });
+    };
+})(jQuery);

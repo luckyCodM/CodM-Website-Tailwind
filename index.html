@@ -79,29 +79,29 @@
 <body class="font-sans antialiased">
 
   <!-- Landing Page -->
-  <section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
+  <!-- <section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');"> -->
     <!-- Header Section -->
-    <header class="p-4">
+    <!-- <header class="p-4"> -->
       <!-- WhatsApp Floating Button -->
-      <section class="fixed bottom-4 right-4 z-50">
+      <!-- <section class="fixed bottom-4 right-4 z-50">
         <a href="https://wa.me/9871717425" target="_blank">
           <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
         </a>
-      </section>
+      </section> -->
 
       <!-- Header Content -->
-      <div class="flex flex-wrap items-center justify-between">
+      <!-- <div class="flex flex-wrap items-center justify-between"> -->
         <!-- Logo Section -->
-        <div class="flex items-center space-x-5 mb-4 md:mb-0">
+        <!-- <div class="flex items-center space-x-5 mb-4 md:mb-0">
           <img src="Image/Codm-logo.png" alt="Logo" class="w-12 h-12 rounded">
           <div>
             <h2 class="text-2xl font-bold text-white">CODM</h2>
             <h6 class="text-sm text-white">Delivering Services Simply</h6>
           </div>
-        </div>
+        </div> -->
 
         <!-- Contact Numbers -->
-        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 mb-4 md:mb-0">
+        <!-- <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 mb-4 md:mb-0">
           <div class="flex items-center space-x-2">
             <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
             <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
@@ -114,18 +114,18 @@
             <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
             <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
           </div>
-        </div>
+        </div> -->
 
         <!-- Social Media Icons -->
-        <div class="flex items-center space-x-4">
+        <!-- <div class="flex items-center space-x-4">
           <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
           <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
           <img src="Image/pinterest.png" alt="Pinterest" class="w-6 h-6">
         </div>
-      </div>
+      </div> -->
 
       <!-- Navigation Bar -->
-      <nav class="mt-4">
+      <!-- <nav class="mt-4">
         <ul class="flex flex-wrap justify-center space-x-5 text-white font-bold text-xl">
           <li><a href="#" class="hover:text-blue-500">Home</a></li>
           <li><a href="#" class="hover:text-blue-500">Company</a></li>
@@ -134,10 +134,10 @@
           <li><a href="#" class="hover:text-blue-500">Contact Us</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-96 text-white">
+    <!-- <section class="bg-cover bg-center h-96 text-white">
       <div class="flex flex-wrap items-center justify-center h-full px-4">
         <div class="w-full md:w-1/2 text-center md:text-left ml-4">
           <h1 class="text-3xl md:text-4xl font-bold">
@@ -151,15 +151,15 @@
             class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded shadow ">
             Contact Us
           </a>
-        </div>
+        </div> -->
         <!-- <div class="w-full md:w-1/2 text-right hidden md:block ">
         <img src="Image/Earth.png" alt="Earth" class="w-20 h-20  relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100">
       </div> -->
-      </div>
-    </section>
+      <!-- </div>
+    </section> -->
 
     <!-- Features Section -->
-    <section class="py-10 px-4">
+    <!-- <section class="py-10 px-4">
       <span class="inline-block w-full  h-0.5 mt-1  bg-white hover:bg-blue-600 text-white mb-10"></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left pl-12">
         <div>
@@ -176,7 +176,111 @@
         </div>
       </div>
     </section>
+  </section> -->
+
+
+  <!-- Landing Page -->
+<section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
+  <!-- Header Section -->
+  <header class="p-4">
+    <!-- WhatsApp Floating Button -->
+    <section class="fixed bottom-4 right-4 z-50">
+      <a href="https://wa.me/9871717425" target="_blank">
+        <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
+      </a>
+    </section>
+
+    <!-- Header Content -->
+    <div class="flex flex-wrap items-center justify-between">
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-5">
+        <img src="Image/Codm-logo.png" alt="Logo" class="w-12 h-12 rounded">
+        <div>
+          <h2 class="text-2xl font-bold text-white">CODM</h2>
+          <h6 class="text-sm text-white">Delivering Services Simply</h6>
+        </div>
+      </div>
+
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Contact Numbers (Visible on Large Screens Only) -->
+      <div class="hidden lg:flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
+        <div class="flex items-center space-x-2">
+          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+          <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+          <h2 class="text-white font-bold text-sm">India: +91 9871717425</h2>
+        </div>
+        <div class="flex items-center space-x-2">
+          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+          <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
+        </div>
+      </div>
+      <!-- Social Media Icons -->
+    <div class="flex items-center space-x-4 flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
+      <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
+      <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
+      <img src="Image/pinterest.png" alt="Pinterest" class="w-6 h-6">
+    </div>
+  </div>
+    </div>
+
+    <!-- Responsive Navigation Bar -->
+    <nav id="menu" class="hidden lg:block mt-4">
+      <ul class="flex flex-col lg:flex-row lg:justify-center lg:space-x-5 text-white font-bold text-xl">
+        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Home</a></li>
+        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Company</a></li>
+        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Services</a></li>
+        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Product</a></li>
+        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96 text-white">
+    <div class="flex flex-wrap items-center justify-center h-full px-4">
+      <div class="w-full md:w-1/2 text-center md:text-left ml-4">
+        <h1 class="text-3xl md:text-4xl font-bold">
+          How Can We Help Your <span class="text-green-500 md:text-4xl font-bold">Business?</span>
+        </h1>
+        <p class="mt-4 text-sm md:text-base">
+          Reliable solutions for your token development. Legal advice by experienced specialists
+          ensures the soundness of your business model at the root of your ICO.
+        </p>
+        <a href="#contact" class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded shadow">
+          Contact Us
+        </a>
+      </div>
+    </div>
   </section>
+
+  <!-- Features Section -->
+  <section class="py-10 px-4">
+    <span class="inline-block w-full h-0.5 mt-1 bg-white hover:bg-blue-600 text-white mb-10"></span>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left pl-12">
+      <div>
+        <h3 class="text-xl font-semibold text-green-500">Experienced</h3>
+        <p class="mt-2 text-white">Reliable solution for <br>your token development.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-green-500">My Partners</h3>
+        <p class="mt-2 text-white">With the US regulations. <br>Legal advice by specialists experienced in ICO.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-green-500">All Clients</h3>
+        <p class="mt-2 text-white">Ensure soundness of the business<br> model at the root of your ICO.</p>
+      </div>
+    </div>
+  </section>
+</section>
 
   <!-- New Products Section -->
 <section class="bg-gray-50 py-10">

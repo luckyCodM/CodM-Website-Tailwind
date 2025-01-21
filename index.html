@@ -5,34 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- / Yoast SEO plugin. -->
-      <meta name='robots' content='max-image-preview:large' />
-      <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      <link rel="canonical" href="index" />
-  
-      <!-- country target language locater  -->
-      <meta property="og:locale" content="en_US" />
-      <!-- country target language locater  -->
-  
-      <meta property="og:type" content="website" />
-  
-      <meta property="og:title" content="CODM SOFTWARE | Salesforce Consulting Partner" />
-  
-      <!--Description for Google bot  -->
-      <meta name="description" content="CodM Software Ltd. is a certified Salesforce Consulting Partner.">
-      <!--Description for Google bot  -->
-  
-      <meta property="og:url" content="codmsoftware.com" />
-      <meta property="og:site_name" content="CODM SOFTWARE | Salesforce Consulting Partner" />
-      <meta property="og:image" content="wp-content/uploads/sites/231/2022/08/sfdx.png" />
-      <meta property="og:image:secure_url" content="wp-content/uploads/sites/231/2022/08/sfdx.png" />
-      <meta property="og:image:width" content="400" />
-      <meta property="og:image:height" content="380" />
-      <meta name="twitter:card" content="Salesforce Consulting Partner." />
-      <meta name="twitter:description" content="CodM Software Ltd. is a certified Salesforce Consulting Partner." />
-      <meta name="twitter:title" content="codmsoftware.com" />
-      <meta name="twitter:image" content="wp-content/uploads/sites/231/2022/08/sfdx.png" />
-      <!-- / Yoast SEO plugin.  -->
+  <!-- / Yoast SEO plugin. -->
+  <meta name='robots' content='max-image-preview:large' />
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="index" />
+
+  <!-- country target language locater  -->
+  <meta property="og:locale" content="en_US" />
+  <!-- country target language locater  -->
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:title" content="CODM SOFTWARE | Salesforce Consulting Partner" />
+
+  <!--Description for Google bot  -->
+  <meta name="description" content="CodM Software Ltd. is a certified Salesforce Consulting Partner.">
+  <!--Description for Google bot  -->
+
+  <meta property="og:url" content="codmsoftware.com" />
+  <meta property="og:site_name" content="CODM SOFTWARE | Salesforce Consulting Partner" />
+  <meta property="og:image" content="wp-content/uploads/sites/231/2022/08/sfdx.png" />
+  <meta property="og:image:secure_url" content="wp-content/uploads/sites/231/2022/08/sfdx.png" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="380" />
+  <meta name="twitter:card" content="Salesforce Consulting Partner." />
+  <meta name="twitter:description" content="CodM Software Ltd. is a certified Salesforce Consulting Partner." />
+  <meta name="twitter:title" content="codmsoftware.com" />
+  <meta name="twitter:image" content="wp-content/uploads/sites/231/2022/08/sfdx.png" />
+  <!-- / Yoast SEO plugin.  -->
 
   <title>Codm Software</title>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -77,31 +77,44 @@
 </head>
 
 <body class="font-sans antialiased">
-
   <!-- Landing Page -->
-  <!-- <section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');"> -->
+  <section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
     <!-- Header Section -->
-    <!-- <header class="p-4"> -->
+    <header class="p-4">
       <!-- WhatsApp Floating Button -->
-      <!-- <section class="fixed bottom-4 right-4 z-50">
+      <section class="fixed bottom-4 right-4 z-50">
         <a href="https://wa.me/9871717425" target="_blank">
           <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
         </a>
-      </section> -->
+      </section>
+      <!-- Salesforce Consulting Floating Button -->
+      <section class="fixed bottom-4 left-4 z-50">
+        <!-- <a href="https://wa.me/9871717425" target="_blank"> -->
+        <img src="Image/Consulting.png" alt="WhatsApp" class="w-14 h-14">
+        </a>
+      </section>
+
 
       <!-- Header Content -->
-      <!-- <div class="flex flex-wrap items-center justify-between"> -->
+      <div class="flex flex-wrap items-center justify-between">
         <!-- Logo Section -->
-        <!-- <div class="flex items-center space-x-5 mb-4 md:mb-0">
+        <div class="flex items-center space-x-5">
           <img src="Image/Codm-logo.png" alt="Logo" class="w-12 h-12 rounded">
           <div>
             <h2 class="text-2xl font-bold text-white">CODM</h2>
             <h6 class="text-sm text-white">Delivering Services Simply</h6>
           </div>
-        </div> -->
+        </div>
 
-        <!-- Contact Numbers -->
-        <!-- <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 mb-4 md:mb-0">
+        <!-- Hamburger Menu Button -->
+        <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Contact Numbers (Visible on Large Screens Only) -->
+        <div class="hidden lg:flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
           <div class="flex items-center space-x-2">
             <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
             <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
@@ -114,30 +127,33 @@
             <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
             <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
           </div>
-        </div> -->
-
-        <!-- Social Media Icons -->
-        <!-- <div class="flex items-center space-x-4">
-          <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
-          <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
-          <img src="Image/pinterest.png" alt="Pinterest" class="w-6 h-6">
         </div>
-      </div> -->
+        <!-- Social Media Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2FCodmSoftwa" target="_blank"
+            rel="noopener noreferrer"><img src="Image/twitter.png" alt="Twitter" class="w-6 h-6"></a>
+          <a href="mailto:someone@example.com"><img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6"></a>
+          <a href="https://www.linkedin.com/company/codmsoftware/"><img src="Image\linkedin.png" alt="Pinterest"
+              class="w-7 h-7"></a>
 
-      <!-- Navigation Bar -->
-      <!-- <nav class="mt-4">
-        <ul class="flex flex-wrap justify-center space-x-5 text-white font-bold text-xl">
-          <li><a href="#" class="hover:text-blue-500">Home</a></li>
-          <li><a href="#" class="hover:text-blue-500">Company</a></li>
-          <li><a href="#" class="hover:text-blue-500">Services</a></li>
-          <li><a href="#" class="hover:text-blue-500">Product</a></li>
-          <li><a href="#" class="hover:text-blue-500">Contact Us</a></li>
+        </div>
+      </div>
+      </div>
+
+      <!-- Responsive Navigation Bar -->
+      <nav id="menu" class="hidden lg:block mt-4">
+        <ul class="flex flex-col lg:flex-row lg:justify-center lg:space-x-5 text-white font-bold text-xl">
+          <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Home</a></li>
+          <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Company</a></li>
+          <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Services</a></li>
+          <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Product</a></li>
+          <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Contact Us</a></li>
         </ul>
       </nav>
-    </header> -->
+    </header>
 
     <!-- Hero Section -->
-    <!-- <section class="bg-cover bg-center h-96 text-white">
+    <section class="bg-cover bg-center h-96 text-white">
       <div class="flex flex-wrap items-center justify-center h-full px-4">
         <div class="w-full md:w-1/2 text-center md:text-left ml-4">
           <h1 class="text-3xl md:text-4xl font-bold">
@@ -147,606 +163,610 @@
             Reliable solutions for your token development. Legal advice by experienced specialists
             ensures the soundness of your business model at the root of your ICO.
           </p>
-          <a href="#contact"
-            class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded shadow ">
+          <a href="#contact-form"
+            class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded shadow">
             Contact Us
           </a>
-        </div> -->
-        <!-- <div class="w-full md:w-1/2 text-right hidden md:block ">
-        <img src="Image/Earth.png" alt="Earth" class="w-20 h-20  relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100">
-      </div> -->
-      <!-- </div>
-    </section> -->
+        </div>
+      </div>
+    </section>
 
     <!-- Features Section -->
-    <!-- <section class="py-10 px-4">
-      <span class="inline-block w-full  h-0.5 mt-1  bg-white hover:bg-blue-600 text-white mb-10"></span>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left pl-12">
-        <div>
-          <h3 class="text-xl font-semibold text-green-500">Experienced</h3>
-          <p class="mt-2 text-white">Reliable solution for <br>your token development.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-green-500">My Partners</h3>
-          <p class="mt-2 text-white">With the US regulations. <br>Legal advice by specialists experienced in ICO.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-green-500">All Clients</h3>
-          <p class="mt-2 text-white">Ensure soundness of the business<br> model at the root of your ICO.</p>
-        </div>
-      </div>
-    </section>
-  </section> -->
+    <section class="py-10 px-4">
+      <!-- Divider -->
+      <span class="inline-block w-full h-0.5 mt-1 bg-white hover:bg-blue-600 text-white mb-5"></span>
 
-
-  <!-- Landing Page -->
-<section class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
-  <!-- Header Section -->
-  <header class="p-4">
-    <!-- WhatsApp Floating Button -->
-    <section class="fixed bottom-4 right-4 z-50">
-      <a href="https://wa.me/9871717425" target="_blank">
-        <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
-      </a>
-    </section>
-
-    <!-- Header Content -->
-    <div class="flex flex-wrap items-center justify-between">
-      <!-- Logo Section -->
-      <div class="flex items-center space-x-5">
-        <img src="Image/Codm-logo.png" alt="Logo" class="w-12 h-12 rounded">
-        <div>
-          <h2 class="text-2xl font-bold text-white">CODM</h2>
-          <h6 class="text-sm text-white">Delivering Services Simply</h6>
-        </div>
-      </div>
-
-      <!-- Hamburger Menu Button -->
-      <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-
-      <!-- Contact Numbers (Visible on Large Screens Only) -->
-      <div class="hidden lg:flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
-        <div class="flex items-center space-x-2">
-          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
-          <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
-        </div>
-        <div class="flex items-center space-x-2">
-          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
-          <h2 class="text-white font-bold text-sm">India: +91 9871717425</h2>
-        </div>
-        <div class="flex items-center space-x-2">
-          <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
-          <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
-        </div>
-      </div>
-      <!-- Social Media Icons -->
-      <div class="flex items-center space-x-4">
-      <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
-      <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
-      <img src="Image/pinterest.png" alt="Pinterest" class="w-6 h-6">
-    </div>
-  </div>
-    </div>
-
-    <!-- Responsive Navigation Bar -->
-    <nav id="menu" class="hidden lg:block mt-4">
-      <ul class="flex flex-col lg:flex-row lg:justify-center lg:space-x-5 text-white font-bold text-xl">
-        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Home</a></li>
-        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Company</a></li>
-        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Services</a></li>
-        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Product</a></li>
-        <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-cover bg-center h-96 text-white">
-    <div class="flex flex-wrap items-center justify-center h-full px-4">
-      <div class="w-full md:w-1/2 text-center md:text-left ml-4">
-        <h1 class="text-3xl md:text-4xl font-bold">
-          How Can We Help Your <span class="text-green-500 md:text-4xl font-bold">Business?</span>
-        </h1>
-        <p class="mt-4 text-sm md:text-base">
-          Reliable solutions for your token development. Legal advice by experienced specialists
-          ensures the soundness of your business model at the root of your ICO.
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-green-500">Our Core Services</h2>
+        <p class="text-sm text-gray-300 mt-2">
+          Reliable solutions to help you achieve business excellence.
         </p>
-        <a href="#contact-form" class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded shadow">
-          Contact Us
-        </a>
       </div>
-    </div>
-  </section>
 
-  <!-- Features Section -->
-  <section class="py-10 px-4">
-    <span class="inline-block w-full h-0.5 mt-1 bg-white hover:bg-blue-600 text-white mb-10"></span>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left pl-12">
-      <div>
-        <h3 class="text-xl font-semibold text-green-500">Experienced</h3>
-        <p class="mt-2 text-white">Reliable solution for <br>your token development.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-green-500">My Partners</h3>
-        <p class="mt-2 text-white">With the US regulations. <br>Legal advice by specialists experienced in ICO.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-green-500">All Clients</h3>
-        <p class="mt-2 text-white">Ensure soundness of the business<br> model at the root of your ICO.</p>
-      </div>
-    </div>
-  </section>
-</section>
-
-  <!-- New Products Section -->
-<section class="bg-gray-50 py-10">
-  <div class="container mx-auto px-4">
-    <!-- Section Title -->
-    <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">NEW PRODUCT</h2>
-
-    <!-- Responsive Grid for Products -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-        <div class="flex justify-center mb-4">
-          <img src="Image/FHT.png" alt="Field History Tracking" class="w-40 h-40">
+      <!-- Core Services Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-white">
+        <!-- Service 1 -->
+        <div class="flex items-center space-x-4">
+          <img src="Image/logo-salesforce.png" alt="Salesforce CRM" class="w-10 h-10">
+          <h3 class="text-sm font-semibold">Salesforce CRM</h3>
         </div>
-        <h3 class="text-lg font-bold text-center mb-2">FIELD HISTORY TRACKING</h3>
-        <div class="text-center">
-          <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+
+        <!-- Service 2 -->
+        <div class="flex items-center space-x-4">
+          <img src="Image/Net.png" alt=".Net Application" class="w-10 h-10">
+          <h3 class="text-sm font-semibold">.Net Application</h3>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="flex items-center space-x-4">
+          <img src="Image/React.png" alt="React Integration" class="w-10 h-10">
+          <h3 class="text-sm font-semibold">React Integration</h3>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="flex items-center space-x-4">
+          <img src="Image/Api-software-integration.png" alt="API Integration" class="w-10 h-10">
+          <h3 class="text-sm font-semibold">API Integration</h3>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="flex items-center space-x-4">
+          <img src="Image/Data-integration Icons.png" alt="Data Integration / Migration" class="w-10 h-10">
+          <h3 class="text-sm font-semibold">Data Integration / Migration</h3>
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-        <div class="flex justify-center mb-4">
-          <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="w-40 h-40">
-        </div>
-        <h3 class="text-lg font-bold text-center mb-2">EVENT MANAGER PRO</h3>
-        <div class="text-center">
-          <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-        <div class="flex justify-center mb-4">
-          <img src="Image/Coming-soon.png" alt="Property Mantra" class="w-40 h-40">
-        </div>
-        <h3 class="text-lg font-bold text-center mb-2">PROPERTY MANTRA</h3>
-        <div class="text-center">
-          <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-        <div class="flex justify-center mb-4">
-          <img src="Image/cbd.png" alt="CBD" class="w-40 h-40">
-        </div>
-        <h3 class="text-lg font-bold text-center mb-2">CBD</h3>
-        <div class="text-center">
-          <a href="https://cbdapp.in/" target="_blank" rel="noopener noreferrer" class="text-green-500 font-semibold hover:underline">READ MORE</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+    </section>
 
 
-  <!-- What We Offer -->
-  <section class="py-10 bg-gray-50 text-center">
-    <h1 class="text-2xl font-bold text-center mb-8 text-blue-950">WHAT WE OFFER</h1>
-    <div class="grid md:grid-cols-4 gap-8">
-      <div class="p-4 bg-white shadow-lg">
-        <h3 class="text-lg font-bold text-center">API Integration</h3>
-        <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center ">
-          <li>links Software for optimised data exchange, increasing efficiency and enabling seamless connectivity</li>
-          <!-- <li>Optimizing Sales Processes for Success</li> -->
-          <!-- <li>Partner Success Strategies</li> -->
-        </ul>
-        <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold">OPEN NOW</a>
-      </div>
-      <div class="p-4 bg-white shadow-lg">
-        <h3 class="text-lg font-bold text-center">OmniStudio (Vlocity)</h3>
-        <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center">
-          <li>OmniStudio Streamlining Application Development Integration and Efficiency with Einstein Automate</li>
-          <!-- <li>Optimizing Sales Processes for Success</li> -->
-          <!-- <li>Partner Success Strategies</li> -->
-        </ul>
-        <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold">OPEN NOW</a>
-      </div>
-      <div class="p-4 bg-white shadow-lg">
-        <h3 class="text-lg font-bold text-center">Data Migration</h3>
-        <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center">
-          <li>Data migration/integration in Salesforce: Transferring external
-            data into Salesforce using tools like Data Loader </li>
-          <!-- <li>Optimizing Sales Processes for Success</li> -->
-          <!-- <li>Partner Success Strategies</li> -->
-        </ul>
-        <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold">OPEN NOW</a>
-      </div>
-      <div class="p-4 bg-white shadow-lg">
-        <h3 class="text-lg font-bold text-center">Consulting Services</h3>
-        <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center">
-          <li>consulting for individuals or businesses by experts who
-            provide strategic advice on how to achieve goals and overcome challenges</li>
-          <!-- <li>Optimizing Sales Processes for Success</li> -->
-          <!-- <li>Partner Success Strategies</li> -->
-        </ul>
-        <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold text-sl">OPEN NOW</a>
-      </div>
-      <!-- Add additional offer cards here -->
-    </div>
-  </section>
+    <!-- New Products Section -->
+    <section class="bg-gray-50 py-10">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">OUR PRODUCT</h2>
 
-  <!-- Section case studies -->
-  <section class="bg-gray-50 py-10 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">CASE STUDIES</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Responsive Grid for Products -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
+            <div class="flex justify-center mb-4">
+              <img src="Image/FHT.png" alt="Field History Tracking" class="w-40 h-40">
+            </div>
+            <h3 class="text-lg font-bold text-center mb-2">FIELD HISTORY TRACKING</h3>
+            <p class="mt-2 text-blue-500">Revolutionizing how you track field history in Salesforce,
+              ensuring every data change is seamlessly recorded,
+              empowering your team with comprehensive insights and compliance assurance.</p>
+            <div class="text-center">
+              <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
+            <div class="flex justify-center mb-4">
+              <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="w-40 h-40">
+            </div>
+            <h3 class="text-lg font-bold text-center mb-2">EVENT MANAGER PRO</h3>
+            <p class="mt-2 text-blue-500">Discover the powerful features of our salesforce integrated application
+              for seamless event creation , management,analysis</p>
+            <div class="text-center">
+              <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
+            <div class="flex justify-center mb-4">
+              <img src="Image/Coming-soon.png" alt="Property Mantra" class="w-40 h-40">
+            </div>
+            <h3 class="text-lg font-bold text-center mb-2">PROPERTY MANTRA</h3>
+            <p class="mt-2 text-blue-500">At Property Mantras, we bring your real estate aspirations
+              to life. Whether you’re searching for the perfect home, a lucrative investment opportunity,
+              or commercial spaces to expand your business, we’ve got you covered.</p>
+            <div class="text-center">
+              <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
+            <div class="flex justify-center mb-4">
+              <img src="Image/cbd.png" alt="CBD" class="w-40 h-40">
+            </div>
+            <h3 class="text-lg font-bold text-center mb-2">CBD</h3>
+            <p class="mt-2 text-blue-500">Ensure seamless and compliant deployments with our CBD App.
+              Our automation solutions deliver robust control and efficiency, meeting the stringent
+              demands of regulated industries.</p>
+            <div class="text-center">
+              <a href="https://cbdapp.in/" target="_blank" rel="noopener noreferrer"
+                class="text-green-500 font-semibold hover:underline">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="py-10 bg-gray-50 text-center">
+      <h1 class="text-2xl font-bold text-center mb-8 text-blue-950">SALESFORCE CRM SERVICES</h1>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="p-4 bg-white shadow-lg">
+          <h2 class="text-lg font-bold text-center">Sales Cloud</h2>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Sales Cloud is perhaps the company’s most popular cloud. 
+              It automates the sales process, drives lead generation, and facilitates communication 
+              across multiple channels.
+            </li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h2 class="text-lg font-bold text-center">Service Cloud</h2>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Service Cloud is a cloud-based platform for customer 
+              service management. It functions as a help desk and customer service 
+              platform and enables companies to provide personalized customer support.
+            </li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h3 class="text-lg font-bold text-center">Experience Cloud</h3>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Experience Cloud, formerly known as Salesforce Community Cloud, 
+              is a platform that allows businesses to create branded and personalized online 
+              experiences for their customers, partners, and employees.</li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h3 class="text-lg font-bold text-center">Financial Services Cloud</h3>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Financial Services Cloud is a cloud-based solution that provides 
+              secure connectivity for financial service organizations with their customers, 
+              partners, and employees. It serves as a unified platform for managing customer data, 
+              applications, and processes in the financial sector.</li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold text-sl">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h3 class="text-lg font-bold text-center">Nonprofit Cloud</h3>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Nonprofit Cloud is a cloud-based software as a service (SaaS) offering 
+              that equips nonprofits with a comprehensive set of tools to manage their organizations. 
+              It includes features for donor management, fundraising, program management, and constituent 
+              engagement.</li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold text-sl">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h3 class="text-lg font-bold text-center">Health Cloud</h3>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Empower hospitals and care givers with a unified view of users through Salesforce Healthcare Cloud. 
+              Personalise engagement with patients, care providers, partners and employees. 
+              Deliver differential treatment, wishful healthcare needs and special care remotely. 
+              </li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold text-sl">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h3 class="text-lg font-bold text-center">Manufacturing Cloud</h3>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Manufacturing Cloud is a service aimed at helping 
+              manufacturers efficiently manage production processes and supply chains. 
+              It offers a complete view of the manufacturing lifecycle, from raw materials 
+              to finished products, enabling optimization of operations and improvement of overall performance.</li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold text-sl">OPEN NOW</a>
+        </div>
+        <div class="p-4 bg-white shadow-lg">
+          <h3 class="text-lg font-bold text-center">Education Cloud</h3>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600 text-center p-4">
+            <li>Salesforce Education Cloud is a cloud-based solution designed for 
+              educational institutions to effectively manage their data and operations. 
+              It offers a centralized platform for student data management, progress tracking, 
+              and stakeholder communication.</li>
+            <!-- <li>Optimizing Sales Processes for Success</li> -->
+            <!-- <li>Partner Success Strategies</li> -->
+          </ul>
+          <a href="#" class="mt-4 block text-green-500 hover:underline text-center font-semibold text-sl">OPEN NOW</a>
+        </div>
+        <!-- Add additional offer cards here -->
+      </div>
+    </section>
+
+    <!-- Section case studies -->
+    <section class="bg-gray-50 py-10 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">CASE STUDIES</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 position-relative">
+            <div class="flex justify-center mb-4">
+              <img src="Image/NGO.png" alt="Non Profit NGO" class="w-25 h-25 bg-center">
+            </div>
+            <h3 class="text-ml font-bold mb-2">Non Profit (NGO)</h3>
+            <p class="text-gray-500 mb-4 text-sm ">
+              Case study on a Salesforce implementation project for an NGO involves
+              several key steps to effectively showcase the project's objectives, challenges, solutions, and outcomes.
+            </p>
+            <a href="#" class="text-green-500 font-semibold">Read More</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex justify-center mb-4">
+              <img src="Image/Salesforce-Education.jpg" alt="Salesforce Education Cloud" class="w-30 bg-center h-30">
+            </div>
+            <h3 class="text-ml font-bold mb-2">Salesforce Education Cloud and Experience Cloud</h3>
+            <p class="text-gray-500 mb-4 text-sm">
+              Case Study: Implementing Salesforce Education Cloud and Experience Cloud for a UK Public University.
+            </p>
+            <a href="#" class="text-green-500 font-semibold">Read More</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex justify-center mb-4">
+              <img src="Image/Financial-cloud.png" alt="Salesforce Financial Services Cloud"
+                class="w-30 bg-center h-30">
+            </div>
+            <h3 class="text-ml font-bold mb-2">Salesforce Financial Services Cloud and Experience Cloud</h3>
+            <p class="text-gray-500 mb-4 text-sm">
+              Case Study: Implementing Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based
+              Bank.
+            </p>
+            <a href="#" class="text-green-500 font-semibold">Read More</a>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex justify-center mb-4">
+              <img src="Image/Financial-cloud.png" alt="Salesforce Financial Services Cloud"
+                class="w-30 bg-center h-30">
+            </div>
+            <h3 class="text-ml font-bold mb-2">Salesforce Financial Services Cloud and Experience Cloud</h3>
+            <p class="text-gray-500 mb-4 text-sm">
+              Case Study: Implementing Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based
+              Bank.
+            </p>
+            <a href="#" class="text-green-500 font-semibold">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section Expand Your Business -->
+    <section class="bg-green-500 text-white py-5">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <p class=" text-lg font-bold text-left text-blue-950">Expand your business with our CRM tools and project
+          management</p>
+        <a href="#contact-form"
+          class=" inline-block bg-blue-950 text-white px-6 py-3 rounded font-bold rounded shadow">Contact Us</a>
+      </div>
+    </section>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="index.js"></script>
+
+    <!-- section project details -->
+    <section id="stats" class="bg-blue-900 text-white py-12" style="background-image: url('Image/Codmbackground.jpg');">
+      <div class="container mx-auto px-4">
+        <div class=" max-w-6xl mx-auto text-center px-4 mb-12">
+          <h1 class="text-4xl font-bold text-white mb-4">Codm Software</h1>
+          <p class=" text-center text-white max-w-2xl mx-auto">
+            We deliver innovations for your success.
+          </p>
+        </div>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
+            <div class="text-6xl mb-0">
+              <i class="fa fa-users text-4xl text-green-500 mb-4"></i>
+            </div>
+            <h3 class=" font-bold uppercase text-lg text-green-500 mb-2">Projects</h3>
+            <h2 class="text-4xl font-bold counter text-green-500" data-count="15">0</h2><span
+              class="text-xl text-green-500 ">+</span></h2>
+          </div>
+          <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
+            <div class="text-6xl mb-0">
+              <i class="fa fa-globe text-4xl text-green-500 mb-4"></i>
+            </div>
+            <h3 class="text-green-500 font-bold uppercase mb-2">Countries</h3>
+            <h2 class="text-4xl font-bold counter text-green-500" data-count="5">0</h2><span
+              class="text-xl text-green-500 ">+</span></h2>
+          </div>
+          <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
+            <div class="text-6xl mb-0 ">
+              <i class="fa fa-coffee text-4xl text-green-500 mb-4 text-green-500"></i>
+            </div>
+            <h3 class="text-green-500 font-bold uppercase mb-2">Repeat Business</h3>
+            <h4 class="text-4xl font-bold counter text-green-500" data-count="12">0</h4><span
+              class="text-xl text-green-500 ">+</span></h4>
+          </div>
+          <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
+            <div class="text-6xl mb-0">
+              <i class="fa fa-plane text-4xl text-green-500 mb-4"></i>
+            </div>
+            <h3 class="text-green-500 font-bold uppercase mb-2 ">Certificates</h3>
+            <h4 class="text-4xl font-bold counter text-green-500" data-count="25">0</h4>
+          </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-10 text-center">
+      <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">CLIENT TESTIMONIALS</h2>
+      <div class="flex flex-wrap justify-center gap-8 px-4 overflow-hidden ">
         <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-md p-6 position-relative">
-          <div class="flex justify-center mb-4">
-            <img src="Image/NGO.png" alt="Non Profit NGO" class="w-25 h-25 bg-center">
+        <div class="flip-card w-72 h-72">
+          <div class="flip-card-inner relative w-full h-full">
+            <!-- Front Side -->
+            <div
+              class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+              <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
+              <h1 class="text-xl font-bold">Banking & Accounts</h1>
+            </div>
+            <!-- Back Side -->
+            <div
+              class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+              <!-- <h1 class="text-xl font-bold">John Doe</h1> -->
+              <p class="text-sm mt-2">Banking & accounts</p>
+              <p class="text-sm mt-1">"Working with CodM was a turning point for us. Their expertise in building
+                customised CRM solutions has transformed our customer interactions. We now have a unified platform that
+                has streamlined our processes, resulting in improved efficiency and ultimately increased revenue. The
+                team's dedication and innovative approach has exceeded our expectations</p>
+            </div>
           </div>
-          <h3 class="text-ml font-bold mb-2">Non Profit (NGO)</h3>
-          <p class="text-gray-500 mb-4 text-sm ">
-            Case study on a Salesforce implementation project for an NGO involves
-            several key steps to effectively showcase the project's objectives, challenges, solutions, and outcomes.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
         </div>
+
         <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Salesforce-Education.jpg" alt="Salesforce Education Cloud" class="w-30 bg-center h-30">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Salesforce Education Cloud and Experience Cloud</h3>
-          <p class="text-gray-500 mb-4 text-sm">
-            Case Study: Implementing Salesforce Education Cloud and Experience Cloud for a UK Public University.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Financial-cloud.png" alt="Salesforce Financial Services Cloud" class="w-30 bg-center h-30">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Salesforce Financial Services Cloud and Experience Cloud</h3>
-          <p class="text-gray-500 mb-4 text-sm">
-            Case Study: Implementing Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based
-            Bank.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Financial-cloud.png" alt="Salesforce Financial Services Cloud" class="w-30 bg-center h-30">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Salesforce Financial Services Cloud and Experience Cloud</h3>
-          <p class="text-gray-500 mb-4 text-sm">
-            Case Study: Implementing Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based
-            Bank.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- section Expand Your Business -->
-  <section class="bg-green-500 text-white py-5">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <p class=" text-lg font-bold text-left text-blue-950">Expand your business with our CRM tools and project
-        management</p>
-      <a href="#contact-form" class="bg-blue-950 text-white px-6 py-2 rounded font-bold">Contact Us</a>
-    </div>
-  </section>
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="index.js"></script>
-
-  <!-- section project details -->
-<section id="stats" class="bg-blue-900 text-white py-12"  style="background-image: url('Image/Codmbackground.jpg');">
-  <div class="container mx-auto px-4">
-    <div class=" max-w-6xl mx-auto text-center px-4 mb-12">
-      <h1 class="text-4xl font-bold text-white mb-4">Codm Software</h1>
-      <p class=" text-center text-white max-w-2xl mx-auto">
-        We deliver innovations for your success.
-      </p>
-    </div>
-  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
-      <div class="text-6xl mb-0">
-        <i class="fa fa-users text-4xl text-green-500 mb-4"></i>
-      </div>
-      <h3 class=" font-bold uppercase text-lg text-green-500 mb-2">Projects</h3>
-      <h2 class="text-4xl font-bold counter text-green-500" data-count="15">0</h2><span class="text-xl text-green-500 ">+</span></h2>
-    </div>
-    <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
-      <div class="text-6xl mb-0">
-        <i class="fa fa-globe text-4xl text-green-500 mb-4"></i>
-      </div>
-      <h3 class="text-green-500 font-bold uppercase mb-2">Countries</h3>
-      <h2 class="text-4xl font-bold counter text-green-500" data-count="5">0</h2><span class="text-xl text-green-500 ">+</span></h2>
-    </div>
-    <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
-      <div class="text-6xl mb-0 ">
-        <i class="fa fa-coffee text-4xl text-green-500 mb-4 text-green-500"></i>
-      </div>
-      <h3 class="text-green-500 font-bold uppercase mb-2">Repeat Business</h3>
-      <h4 class="text-4xl font-bold counter text-green-500" data-count="12">0</h4><span class="text-xl text-green-500 ">+</span></h4>
-    </div>
-    <div class=" text-center rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform">
-      <div class="text-6xl mb-0">
-        <i class="fa fa-plane text-4xl text-green-500 mb-4"></i>
-      </div>
-      <h3 class="text-green-500 font-bold uppercase mb-2 ">Certificates</h3>
-      <h4 class="text-4xl font-bold counter text-green-500" data-count="25">0</h4>
-    </div>
-  </div>
-</section>
-
-  <section class="bg-gray-100 py-10 text-center">
-    <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">CLIENT TESTIMONIALS</h2>
-    <div class="flex flex-wrap justify-center gap-8 px-4 overflow-hidden ">
-      <!-- Card 1 -->
-      <div class="flip-card w-72 h-72">
-        <div class="flip-card-inner relative w-full h-full">
-          <!-- Front Side -->
-          <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
-            <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
-             <h1 class="text-xl font-bold">Banking & Accounts</h1>
-          </div>
-          <!-- Back Side -->
-          <div
-            class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
-            <!-- <h1 class="text-xl font-bold">John Doe</h1> -->
-            <p class="text-sm mt-2">Banking & accounts</p>
-            <p class="text-sm mt-1">"Working with CodM was a turning point for us. Their expertise in building
-              customised CRM solutions has transformed our customer interactions. We now have a unified platform that
-              has streamlined our processes, resulting in improved efficiency and ultimately increased revenue. The
-              team's dedication and innovative approach has exceeded our expectations</p>
+        <div class="flip-card w-72 h-72">
+          <div class="flip-card-inner relative w-full h-full">
+            <!-- Front Side -->
+            <div
+              class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+              <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
+              <h1 class="text-xl font-bold">Manufacturing</h1>
+            </div>
+            <!-- Back Side -->
+            <div
+              class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+              <!-- <h1 class="text-xl font-bold">John Sarleyson</h1> -->
+              <p class="text-sm mt-2">Manufacturing</p>
+              <p class="text-sm mt-1">“Thanks to CodM, our marketing efforts skyrocketed. The personalized CRM solution
+                enhanced our targeting, resulting in higher conversion rates. Smooth transition, user-friendly
+                interface—our marketing team is now more agile than ever”</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="flip-card w-72 h-72">
-        <div class="flip-card-inner relative w-full h-full">
-          <!-- Front Side -->
-          <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
-            <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
-            <h1 class="text-xl font-bold">Manufacturing</h1>
-          </div>
-          <!-- Back Side -->
-          <div
-            class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
-            <!-- <h1 class="text-xl font-bold">John Sarleyson</h1> -->
-            <p class="text-sm mt-2">Manufacturing</p>
-            <p class="text-sm mt-1">“Thanks to CodM, our marketing efforts skyrocketed. The personalized CRM solution
-              enhanced our targeting, resulting in higher conversion rates. Smooth transition, user-friendly
-              interface—our marketing team is now more agile than ever”</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card w-72 h-72">
-        <div class="flip-card-inner relative w-full h-full">
-          <!-- Front Side -->
-          <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
-            <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
-            <h1 class="text-xl font-bold">Healthcare</h1>
-          </div>
-          <!-- Back Side -->
-          <div
-            class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
-            <!-- <h1 class="text-xl font-bold">Healthcare</h1> -->
-            <p class="text-sm mt-2">Healthcare</p>
-            <p class="text-sm mt-1">“CodM has given our company a strategic boost. Customised solutions improved our
-              workflows and supply chain management. Valuable insights for better decision making. Their understanding
-              of our business needs sets them apart”</p>
+        <div class="flip-card w-72 h-72">
+          <div class="flip-card-inner relative w-full h-full">
+            <!-- Front Side -->
+            <div
+              class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+              <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
+              <h1 class="text-xl font-bold">Healthcare</h1>
+            </div>
+            <!-- Back Side -->
+            <div
+              class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+              <!-- <h1 class="text-xl font-bold">Healthcare</h1> -->
+              <p class="text-sm mt-2">Healthcare</p>
+              <p class="text-sm mt-1">“CodM has given our company a strategic boost. Customised solutions improved our
+                workflows and supply chain management. Valuable insights for better decision making. Their understanding
+                of our business needs sets them apart”</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flip-card w-72 h-72">
-        <div class="flip-card-inner relative w-full h-full">
-          <!-- Front Side -->
-          <div class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
-            <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
-             <h1 class="text-xl font-bold">Finance</h1>
-          </div>
-          <!-- Back Side -->
-          <div
-            class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
-            <!-- <h1 class="text-xl font-bold">Finance</h1> -->
-            <p class="text-sm mt-2">Finance</p>
-            <p class="text-sm mt-1">“CodM transformed our customer service. Their CRM solution centralized information,
-              enabling prompt and personalized support. Increased customer satisfaction is now our norm. They've been a
-              true partner in our journey towards service excellence.”</p>
+        <div class="flip-card w-72 h-72">
+          <div class="flip-card-inner relative w-full h-full">
+            <!-- Front Side -->
+            <div
+              class="flip-card-front absolute inset-0 bg-white flex items-center justify-center rounded-lg shadow-lg">
+              <!-- <img src="Image/Men.png" alt="Avatar" class="w-full h-full object-cover rounded-lg"> -->
+              <h1 class="text-xl font-bold">Finance</h1>
+            </div>
+            <!-- Back Side -->
+            <div
+              class="flip-card-back absolute inset-0 bg-green-500 text-white flex flex-col items-center justify-center rounded-lg shadow-lg p-4">
+              <!-- <h1 class="text-xl font-bold">Finance</h1> -->
+              <p class="text-sm mt-2">Finance</p>
+              <p class="text-sm mt-1">“CodM transformed our customer service. Their CRM solution centralized
+                information,
+                enabling prompt and personalized support. Increased customer satisfaction is now our norm. They've been
+                a
+                true partner in our journey towards service excellence.”</p>
+            </div>
           </div>
         </div>
-      </div>
-  </section>
+    </section>
 
-  <!-- Section: Trusted By -->
-  <section class="bg-gray-100 py-10 overflow-hidden text-center">
-    <!-- Section Title -->
-    <h2 class="text-center text-2xl font-bold text-blue-950 mb-8 ">TRUSTED BY</h2>
+    <!-- Section: Trusted By -->
+    <section class="bg-gray-100 py-10 overflow-hidden text-center">
+      <!-- Section Title -->
+      <h2 class="text-center text-2xl font-bold text-blue-950 mb-8 ">TRUSTED BY</h2>
 
-    <!-- Horizontal Scrolling Container -->
-    <div
-      class="flex overflow-x-auto scroll-smooth space-x-5 snap-x snap-mandatory px-4 md:px-20 justify-center animate-scroll"
-      id="slides">
-      <!-- Brand 1 -->
+      <!-- Horizontal Scrolling Container -->
       <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/bellhopClinet.png" alt="Bellhop Logo" class="object-cover rounded-lg w-20 h-20">
+        class="flex overflow-x-auto scroll-smooth space-x-5 snap-x snap-mandatory px-4 md:px-20 justify-center animate-scroll"
+        id="slides">
+        <!-- Brand 1 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/bellhopClinet.png" alt="Bellhop Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 2 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/dynamicClinet.png" alt="Dynamic Client Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 3 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/absaClinet.png" alt="Absa Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 4 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/xqlClinet.png" alt="XQL Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 5 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/cloudsr.webp" alt="CloudSR Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 6 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/phaseTrust.jpg" alt="Phase Trust Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 7 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/changeMachineClinet.png" alt="Change Machine Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 8 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/coventry.jpg" alt="Coventry University Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
+        <!-- Brand 9 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
+          <img src="Image/foogalClinet.png" alt="Foogal Logo" class="object-cover rounded-lg w-20 h-20">
+        </div>
       </div>
-      <!-- Brand 2 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/dynamicClinet.png" alt="Dynamic Client Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 3 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/absaClinet.png" alt="Absa Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 4 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/xqlClinet.png" alt="XQL Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 5 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/cloudsr.webp" alt="CloudSR Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 6 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/phaseTrust.jpg" alt="Phase Trust Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 7 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/changeMachineClinet.png" alt="Change Machine Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 8 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/coventry.jpg" alt="Coventry University Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-      <!-- Brand 9 -->
-      <div
-        class="bg-white shadow-md rounded-xl p-2 flex justify-center items-center w-28 h-28 flex-shrink-0 snap-center">
-        <img src="Image/foogalClinet.png" alt="Foogal Logo" class="object-cover rounded-lg w-20 h-20">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <style>
-    @keyframes scroll {
-      0% {
-        transform: translateX(100%);
+    <style>
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
       }
 
-      100% {
-        transform: translateX(-100%);
+      .animate-scroll {
+        display: flex;
+        animation: scroll 20s linear infinite;
       }
-    }
+    </style>
 
-    .animate-scroll {
-      display: flex;
-      animation: scroll 20s linear infinite;
-    }
-  </style>
-
-  <!-- Footer -->
-<footer id="footer" class="bg-blue-950 text-white py-10" style="background-image: url('Image/top_screen.jpg');">
-  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-    <!-- Company Info -->
-    <div id="company-info">
-      <div class="flex items-center mb-4">
-        <img src="Image/Codm-logo.png" alt="Codm Logo" class="w-12 h-12">
-        <div class="ml-3">
-          <h4 class="text-lg font-bold">CODM</h4>
-          <p class="text-sm">Delivering Services Simply</p>
+    <!-- Footer -->
+    <footer id="footer" class="bg-blue-950 text-white py-10" style="background-image: url('Image/top_screen.jpg');">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div id="company-info">
+          <div class="flex items-center mb-4">
+            <img src="Image/Codm-logo.png" alt="Codm Logo" class="w-12 h-12">
+            <div class="ml-3">
+              <h4 class="text-lg font-bold">CODM</h4>
+              <p class="text-sm">Delivering Services Simply</p>
+            </div>
+          </div>
+          <p class="text-sm text-left">
+            Founded in 2021, CodM specializes in world-class Salesforce CRM implementation and consulting services,
+            with a global presence in two key locations, India and the UK. Our expert team of certified architects,
+            consultants, and developers has successfully delivered numerous Salesforce projects across various
+            industries
+            in both regions. With a focus on security reviews and best practices, we have earned the distinction of
+            being
+            an official Salesforce Consulting Partner since 2021.
+          </p>
+        </div>
+        <!-- Get in Touch -->
+        <div id="get-in-touch" class="text-left">
+          <h5 class="font-semibold text-lg mb-4">Get in Touch</h5>
+          <p>Email: <a href="mailto:info@codmsoftware.com" class="text-white pl-2">info@codmsoftware.com</a></p>
+          <p>UK: <a href="tel:+441218186924" class="text-white pl-2">(+44) 0121 818 6924</a></p>
+          <p>India: <a href="tel:+441218186924" class="text-white pl-2">+91 9871717425</a></p>
+          <p>USA: <a href="tel:+441218186924" class="text-white pl2">+1(972)-945-5043</a></p>
+        </div>
+        <!-- Quick Links -->
+        <div id="quick-links">
+          <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
+          <ul class="space-y-0 grid grid-cols-2 md:grid-cols-2 gap-1 text-white">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">About us</a></li>
+            <li><a href="#" class="hover:text-blue-500">Blog</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact us</a></li>
+            <li><a href="#" class="hover:text-blue-500">Products</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">Company</a></li>
+            <li><a href="#" class="hover:text-blue-500">Case Studies</a></li>
+          </ul>
+          <div id="location" class="footer-map">
+            <h5 class="font-semibold text-lg mb-4 text-left">Location</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9080067513974!2d-0.1235842!3d51.5149037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ccab37652b%3A0x22220c3f07824033!2sShop%2071%2C%20ALG%20ID%20Cards%20t%2Fa%20The%20Lanyard%2C%2075%20Shelton%20St%2C%20London%20WC2H%209JQ%2C%20UK!5e0!3m2!1sen!2sin!4v1736413274353!5m2!1sen!2sin"
+              width="250" height="210" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade rounded-lg shadow-md"></iframe>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div id="contact-form">
+          <div class="flex flex-col min-h-100 bg-gray-100 rounded">
+            <!-- Main Content -->
+            <div class="flex-grow flex flex-col items-center justify-center">
+              <div class="w-full max-w-md bg-white p-5 rounded-lg shadow-md">
+                <h1 class="text-2xl font-semibold text-center mb-2 text-blue-950">Contact Us</h1>
+                <form action="#" method="POST" class="space-y-4">
+                  <div class="flex space-x-4">
+                    <div class="w-1/2">
+                      <label for="first_name" class="block text-sm font-medium text-gray-700">Your Name*</label>
+                      <input type="text" id="first_name" name="first_name" placeholder="Your Name"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="w-1/2">
+                      <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name*</label>
+                      <input type="text" id="last_name" name="last_name" placeholder="Last Name"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                  </div>
+                  <div class="flex space-x-4">
+                    <div class="w-1/2">
+                      <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number*</label>
+                      <input type="text" id="phone" name="phone" placeholder="Phone Number"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="w-1/2">
+                      <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
+                      <input type="text" id="email" name="email" placeholder="email"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                  </div>
+                  <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                  <textarea id="message" name="message" rows="2" placeholder="Message"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+              </div>
+              <div class="flex justify-center">
+                <button type="submit"
+                  class="mt-2 mb-2 px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
+              </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <p class="text-sm text-left">
-        Founded in 2021, CodM specializes in world-class Salesforce CRM implementation and consulting services,
-        with a global presence in two key locations, India and the UK. Our expert team of certified architects,
-        consultants, and developers has successfully delivered numerous Salesforce projects across various industries
-        in both regions. With a focus on security reviews and best practices, we have earned the distinction of being
-        an official Salesforce Consulting Partner since 2021.
-      </p>
-    </div>
-    <!-- Get in Touch -->
-    <div id="get-in-touch" class="text-left">
-      <h5 class="font-semibold text-lg mb-4">Get in Touch</h5>
-      <p>Email: <a href="mailto:info@codmsoftware.com" class="text-white pl-2">info@codmsoftware.com</a></p>
-      <p>UK: <a href="tel:+441218186924" class="text-white pl-2">(+44) 0121 818 6924</a></p>
-      <p>India: <a href="tel:+441218186924" class="text-white pl-2">+91 9871717425</a></p>
-      <p>USA: <a href="tel:+441218186924" class="text-white pl2">+1(972)-945-5043</a></p>
-    </div>
-    <!-- Quick Links -->
-    <div id="quick-links">
-      <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
-      <ul class="space-y-0 grid grid-cols-2 md:grid-cols-2 gap-1 text-white">
-        <li><a href="#" class="hover:text-blue-500">Home</a></li>
-        <li><a href="#" class="hover:text-blue-500">About us</a></li>
-        <li><a href="#" class="hover:text-blue-500">Blog</a></li>
-        <li><a href="#" class="hover:text-blue-500">Contact us</a></li>
-        <li><a href="#" class="hover:text-blue-500">Products</a></li>
-        <li><a href="#" class="hover:text-blue-500">Services</a></li>
-        <li><a href="#" class="hover:text-blue-500">Company</a></li>
-        <li><a href="#" class="hover:text-blue-500">Case Studies</a></li>
-      </ul>
-      <div id="location" class="footer-map">
-        <h5 class="font-semibold text-lg mb-4 text-left">Location</h5>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9080067513974!2d-0.1235842!3d51.5149037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ccab37652b%3A0x22220c3f07824033!2sShop%2071%2C%20ALG%20ID%20Cards%20t%2Fa%20The%20Lanyard%2C%2075%20Shelton%20St%2C%20London%20WC2H%209JQ%2C%20UK!5e0!3m2!1sen!2sin!4v1736413274353!5m2!1sen!2sin"
-          width="250" height="210" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade rounded-lg shadow-md"></iframe>
+      <!-- Footer Bottom -->
+      <div id="footer-bottom" class="mt-8 text-center text-sm text-gray-400 bg-blue-900">
+        © All Rights Reserved <span class="text-teal-500">CodM Software</span>
       </div>
-    </div>
-    <!-- Contact Form -->
-    <div id="contact-form">
-      <div class="flex flex-col min-h-100 bg-gray-100 rounded">
-        <!-- Main Content -->
-        <div class="flex-grow flex flex-col items-center justify-center">
-          <div class="w-full max-w-md bg-white p-5 rounded-lg shadow-md">
-            <h1 class="text-2xl font-semibold text-center mb-2 text-blue-950">Contact Us</h1>
-            <form action="#" method="POST" class="space-y-4">
-              <div class="flex space-x-4">
-                <div class="w-1/2">
-                  <label for="first_name" class="block text-sm font-medium text-gray-700">Your Name*</label>
-                  <input type="text" id="first_name" name="first_name" placeholder="Your Name"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="w-1/2">
-                  <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name*</label>
-                  <input type="text" id="last_name" name="last_name" placeholder="Last Name"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-              </div>
-              <div class="flex space-x-4">
-                <div class="w-1/2">
-                  <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number*</label>
-                  <input type="text" id="phone" name="phone" placeholder="Phone Number"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="w-1/2">
-                  <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
-                  <input type="text" id="email" name="email" placeholder="email"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                </div>
-              </div>
-              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-              <textarea id="message" name="message" rows="2" placeholder="Message"
-                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-          </div>
-          <div class="flex justify-center">
-            <button type="submit"
-              class="mt-2 mb-2 px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
-          </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer Bottom -->
-  <div id="footer-bottom" class="mt-8 text-center text-sm text-gray-400 bg-blue-900">
-    © All Rights Reserved <span class="text-teal-500">CodM Software</span>
-  </div>
-</footer>
+    </footer>
 
 </body>
 

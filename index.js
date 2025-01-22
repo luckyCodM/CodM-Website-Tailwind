@@ -52,15 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  // <!-- JavaScript for Hamburger Menu -->
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+  
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
 
-  // JavaScript for Hamburger Menu
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
 
 
 // JavaScript for Salesforce CRM scroll

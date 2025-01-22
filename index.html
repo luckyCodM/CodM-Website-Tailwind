@@ -108,9 +108,9 @@
         </a>
       </section>
 
-
-      <!-- Header Content -->
-      <div class="flex flex-wrap items-center justify-between">
+    <header class=" text-white py-4 px-4 lg:px-10">
+      <!-- Header Content --> 
+      <div class="flex  flex-wrap items-center justify-between">
         <!-- Logo Section -->
         <div class="flex items-center space-x-5">
           <img src="Image/Codm-logo.png" alt="Logo" class="w-12 h-12 rounded">
@@ -119,17 +119,18 @@
             <h6 class="text-sm text-white">Delivering Services Simply</h6>
           </div>
         </div>
-
-        <!-- Hamburger Menu Button -->
-        <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+    
+        <!-- Hamburger Menu Button (Visible only on Mobile) -->
+        <button id="menu-toggle" class="lg:hidden text-green-500 focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-
-        <!-- Contact Numbers (Visible on Large Screens Only) -->
+    
+        <!-- Contact Numbers and Social Media Icons (Visible on all screen sizes) -->
         <div class="hidden lg:flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
-          <div class="flex items-center space-x-2">
+          <!-- Contact Numbers -->
+          <div class="flex items-center space-x-2 ">
             <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
             <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
           </div>
@@ -141,21 +142,23 @@
             <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
             <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
           </div>
-        </div>
-        <!-- Social Media Icons -->
-        <div class="flex items-center space-x-4">
-          <a href="https://x.com/i/flow/login?redirect_after_login=%2FCodmSoftwa" target="_blank"
-            rel="noopener noreferrer"><img src="Image/twitter.png" alt="Twitter" class="w-6 h-6"></a>
-          <a href="mailto:someone@example.com"><img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6"></a>
-          <a href="https://www.linkedin.com/company/codmsoftware/"><img src="Image\linkedin.png" alt="Pinterest"
-              class="w-7 h-7"></a>
-
+          <!-- Social Media Icons -->
+          <div class="flex items-center space-x-4 mt-4 sm:mt-0">
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2FCodmSoftwa" target="_blank" rel="noopener noreferrer">
+              <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
+            </a>
+            <a href="mailto:someone@example.com">
+              <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
+            </a>
+            <a href="https://www.linkedin.com/company/codmsoftware/">
+              <img src="Image/linkedin.png" alt="LinkedIn" class="w-7 h-7">
+            </a>
+          </div>
         </div>
       </div>
-      </div>
 
-      <!-- Responsive Navigation Bar -->
-      <nav id="menu" class="hidden lg:block mt-4">
+  <!-- Responsive Navigation Bar -->
+      <nav class="hidden lg:block mt-4">
         <ul class="flex flex-col lg:flex-row lg:justify-center lg:space-x-5 text-white font-bold text-xl">
           <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Home</a></li>
           <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Company</a></li>
@@ -164,8 +167,52 @@
           <li><a href="#" class="hover:text-blue-500 block py-2 lg:py-0">Contact Us</a></li>
         </ul>
       </nav>
+      
+    
+      <!-- Responsive Menu -->
+      <div id="menu" class="hidden lg:hidden mt-4 space-y-4 bg-blue-950">
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="bg-blue-950 flex flex-col text-white font-bold text-lg space-y-2 text-center">
+            <li><a href="#" class="hover:text-blue-500 block py-2">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500 block py-2">Company</a></li>
+            <li><a href="#" class="hover:text-blue-500 block py-2">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500 block py-2">Product</a></li>
+            <li><a href="#" class="hover:text-blue-500 block py-2">Contact Us</a></li>
+          </ul>
+        </nav>
+    
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2FCodmSoftwa" target="_blank" rel="noopener noreferrer">
+            <img src="Image/twitter.png" alt="Twitter" class="w-6 h-6">
+          </a>
+          <a href="mailto:someone@example.com">
+            <img src="Image/gmail-logo.png" alt="Gmail" class="w-6 h-6">
+          </a>
+          <a href="https://www.linkedin.com/company/codmsoftware/">
+            <img src="Image/linkedin.png" alt="LinkedIn" class="w-7 h-7">
+          </a>
+        </div>
+    
+        <!-- Contact Numbers -->
+        <div class="flex flex-col item-center space-y-2 mt-4  ">
+          <div class="flex items-center space-x-2 ">
+            <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+            <h2 class="text-white font-bold text-sm">UK: (+44) 0121 818 6924</h2>
+          </div>
+          <div class="flex items-center space-x-2 ">
+            <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+            <h2 class="text-white font-bold text-sm">India: +91 9871717425</h2>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img src="Image/Phone.png" alt="Phone Icon" class="w-6 h-6">
+            <h2 class="text-white font-bold text-sm">USA: +1(972)-945-5043</h2>
+          </div>
+        </div>
+      </div>
     </header>
-
+      
     <!-- Hero Section -->
     <section class="bg-cover bg-center h-96 text-white">
       <div class="flex flex-wrap items-center justify-center h-full px-4">
@@ -246,29 +293,25 @@
           <img src="Image/FHT.png" alt="Field History Tracking" class="mx-auto w-40 h-40 mb-4">
           <h3 class="font-bold text-lg text-blue-950">FIELD HISTORY TRACKING</h3>
           <p class="text-sm text-gray-600 line-clamp-2" id="content1">
-            Revolutionizing how you track field history in Salesforce, ensuring every data change is seamlessly recorded, empowering your team with comprehensive insights and compliance assurance.
+            Revolutionizing how you track field history in Salesforce, ensuring every data change is seamlessly
+            recorded, empowering your team with comprehensive insights and compliance assurance.
           </p>
-          <button
-            onclick="toggleContent('content1', this)"
-            class="text-green-600 font-semibold mt-2 hover:underline"
-          >
+          <button onclick="toggleContent('content1', this)" class="text-green-600 font-semibold mt-2 hover:underline">
             READ MORE
           </button>
         </div>
       </div>
-  
+
       <!-- Repeat similar structure for EVENT MANAGER PRO cards -->
       <div class=" shadow-lg rounded-lg p-4 bg-white relative transition-transform duration-300 hover:scale-105">
         <div class="text-center">
           <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="mx-auto w-40 h-40 mb-4">
           <h3 class="font-bold text-lg text-blue-950">EVENT MANAGER PRO</h3>
           <p class="text-sm text-gray-600 line-clamp-2" id="content2">
-            Discover the powerful features of our Salesforce integrated application for seamless event creation, management, and analysis.
+            Discover the powerful features of our Salesforce integrated application for seamless event creation,
+            management, and analysis.
           </p>
-          <button
-            onclick="toggleContent('content2', this)"
-            class="text-green-600 font-semibold mt-2 hover:underline"
-          >
+          <button onclick="toggleContent('content2', this)" class="text-green-600 font-semibold mt-2 hover:underline">
             READ MORE
           </button>
         </div>
@@ -284,10 +327,7 @@
             to life. Whether you’re searching for the perfect home, a lucrative investment opportunity,
             or commercial spaces to expand your business, we’ve got you covered.
           </p>
-          <button
-            onclick="toggleContent('content3', this)"
-            class="text-green-600 font-semibold mt-2 hover:underline"
-          >
+          <button onclick="toggleContent('content3', this)" class="text-green-600 font-semibold mt-2 hover:underline">
             READ MORE
           </button>
         </div>
@@ -302,15 +342,12 @@
             Ensure seamless and compliant deployments with our CBD App.
             Our automation solutions deliver robust control and efficiency, meeting the stringent
             demands of regulated industries.</p>
-          <button
-            onclick="toggleContent('content4', this)"
-            class="text-green-600 font-semibold mt-2 hover:underline"
-          >
+          <button onclick="toggleContent('content4', this)" class="text-green-600 font-semibold mt-2 hover:underline">
             READ MORE
           </button>
         </div>
       </div>
-  
+
       <!-- Add more cards as needed -->
     </div>
   </section>
@@ -328,7 +365,7 @@
         <!-- Horizontal Scroll Container -->
         <div id="scrollContainer" class="flex gap-4 overflow-x-auto scrolling-touch no-scrollbar cursor-grab">
           <!-- Card Template 1-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -344,7 +381,7 @@
             </a>
           </div>
           <!-- Card Template 2-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -360,7 +397,7 @@
             </a>
           </div>
           <!-- Card Template 3-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -376,7 +413,7 @@
             </a>
           </div>
           <!-- Card Template 4-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -392,8 +429,8 @@
             </a>
           </div>
 
-           <!-- Card Template 5-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <!-- Card Template 5-->
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -408,8 +445,8 @@
               </div>
             </a>
           </div>
-            <!-- Card Template 6-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <!-- Card Template 6-->
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -425,8 +462,8 @@
             </a>
           </div>
 
-           <!-- Card Template 7-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <!-- Card Template 7-->
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
@@ -441,12 +478,12 @@
               </div>
             </a>
           </div>
-           <!-- Card Template 8-->
-          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg">
+          <!-- Card Template 8-->
+          <div class="shadow-lg bg-white flex-none w-72 sm:w-80 rounded-lg py-4">
             <a href="#" class="space-y-4 h-full">
               <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-t-lg"></div>
               <div class="px-4 py-4 flex flex-col justify-between h-full">
-                <h3 class="font-bold text-blue-950 text-lg text-center mb-2">
+                <h3 class="font-bold text-blue-950 text-lg text-center mb-2 ">
                   Financial Services Cloud
                 </h3>
                 <p class="text-sm text-gray-600 text-center">
@@ -462,7 +499,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- Section case studies -->
   <section class="bg-gray-50 py-10 text-center">
@@ -522,11 +558,15 @@
 
   <!-- section Expand Your Business -->
   <section class="bg-green-500 text-white py-5">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <p class=" text-lg font-bold text-left text-blue-950">Expand your business with our CRM tools and project
-        management</p>
-      <a href="#contact-form"
-        class=" inline-block bg-blue-950 text-white px-6 py-3 rounded font-bold rounded shadow">Contact Us</a>
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+      <!-- Text -->
+      <p class="text-center sm:text-left text-lg font-bold text-blue-950">
+        Expand your business with our CRM tools and project management
+      </p>
+      <!-- Button -->
+      <a href="#contact-form" class="inline-block bg-blue-950 text-white px-6 py-3 rounded font-bold shadow">
+        Contact Us
+      </a>
     </div>
   </section>
 
@@ -652,7 +692,8 @@
             <!-- <h1 class="text-xl font-bold">Finance</h1> -->
             <p class="text-sm mt-2">Finance</p>
             <p class="text-sm mt-1">“CodM transformed our customer service. Their CRM solution centralized
-              information,enabling prompt and personalized support. Increased customer satisfaction is now our norm. They've been
+              information,enabling prompt and personalized support. Increased customer satisfaction is now our norm.
+              They've been
               a true partner in our journey towards service excellence.”</p>
           </div>
         </div>
@@ -715,7 +756,6 @@
       </div>
     </div>
   </section>
-
   <style>
     @keyframes scroll {
       0% {
@@ -746,7 +786,8 @@
           </div>
         </div>
         <p class="text-sm text-left">
-          Founded in 2021, CodM specializes in world-class <br>Salesforce CRM implementation and consulting services,<br>
+          Founded in 2021, CodM specializes in world-class <br>Salesforce CRM implementation and consulting
+          services,<br>
           with a global presence in two key locations, India and the UK. Our expert team of certified architects,
           consultants, and developers has successfully delivered numerous Salesforce projects across various
           industries
@@ -771,10 +812,11 @@
             referrerpolicy="no-referrer-when-downgrade rounded-lg shadow-md"></iframe>
         </div>
       </div>
+
       <!-- Quick Links -->
-      <div id="quick-links">
+      <div id="quick-links" class="text-left sm:text-left">
         <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
-        <ul class="space-y-0 grid grid-cols-1 md:grid-cols-1 gap-1 text-white">
+        <ul class="grid grid-cols-2 sm:grid-cols-1 gap-2 text-white">
           <li><a href="#" class="hover:text-blue-500">Home</a></li>
           <li><a href="#" class="hover:text-blue-500">About us</a></li>
           <li><a href="#" class="hover:text-blue-500">Blog</a></li>
@@ -784,7 +826,6 @@
           <li><a href="#" class="hover:text-blue-500">Company</a></li>
           <li><a href="#" class="hover:text-blue-500">Case Studies</a></li>
         </ul>
-        
       </div>
       <!-- Contact Form -->
       <div id="contact-form">
@@ -836,7 +877,7 @@
       © All Rights Reserved <span class="text-teal-500">CodM Software</span>
     </div>
   </footer>
- 
+
 </body>
 
 </html>

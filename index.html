@@ -235,69 +235,83 @@
 
 
   <!-- New Products Section -->
-  <section class="bg-gray-50 py-10">
-    <div class="container mx-auto px-4">
-      <!-- Section Title -->
-      <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">OUR PRODUCTS</h2>
-
-      <!-- Responsive Grid for Products -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-          <div class="flex justify-center mb-4">
-            <img src="Image/FHT.png" alt="Field History Tracking" class="w-40 h-40">
-          </div>
-          <h3 class="text-lg font-bold text-center mb-2">FIELD HISTORY TRACKING</h3>
-          <p class="mt-2 text-blue-500">Revolutionizing how you track field history in Salesforce,
-            ensuring every data change is seamlessly recorded,
-            empowering your team with comprehensive insights and compliance assurance.</p>
-          <div class="text-center">
-            <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="w-40 h-40">
-          </div>
-          <h3 class="text-lg font-bold text-center mb-2">EVENT MANAGER PRO</h3>
-          <p class="mt-2 text-blue-500">Discover the powerful features of our salesforce integrated application
-            for seamless event creation , management,analysis</p>
-          <div class="text-center">
-            <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Coming-soon.png" alt="Property Mantra" class="w-40 h-40">
-          </div>
-          <h3 class="text-lg font-bold text-center mb-2">PROPERTY MANTRA</h3>
-          <p class="mt-2 text-blue-500">At Property Mantras, we bring your real estate aspirations
-            to life. Whether you’re searching for the perfect home, a lucrative investment opportunity,
-            or commercial spaces to expand your business, we’ve got you covered.</p>
-          <div class="text-center">
-            <a href="#" class="text-green-500 font-semibold hover:underline">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg shadow-md p-6 relative transition-transform duration-300 hover:scale-105">
-          <div class="flex justify-center mb-4">
-            <img src="Image/cbd.png" alt="CBD" class="w-40 h-40">
-          </div>
-          <h3 class="text-lg font-bold text-center mb-2">CBD</h3>
-          <p class="mt-2 text-blue-500">Ensure seamless and compliant deployments with our CBD App.
-            Our automation solutions deliver robust control and efficiency, meeting the stringent
-            demands of regulated industries.</p>
-          <div class="text-center">
-            <a href="https://cbdapp.in/" target="_blank" rel="noopener noreferrer"
-              class="text-green-500 font-semibold hover:underline">READ MORE</a>
-          </div>
+  <section class="px-4 py-10 bg-gray-50 text-center">
+    <!-- Section Title -->
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">OUR PRODUCTS</h2>
+    <!-- Responsive Grid for Products -->
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Card -->
+      <div class="shadow-lg rounded-lg p-4 bg-white relative transition-transform duration-300 hover:scale-105">
+        <div class="text-center">
+          <img src="Image/FHT.png" alt="Field History Tracking" class="mx-auto w-40 h-40 mb-4">
+          <h3 class="font-bold text-lg text-blue-950">FIELD HISTORY TRACKING</h3>
+          <p class="text-sm text-gray-600 line-clamp-2" id="content1">
+            Revolutionizing how you track field history in Salesforce, ensuring every data change is seamlessly recorded, empowering your team with comprehensive insights and compliance assurance.
+          </p>
+          <button
+            onclick="toggleContent('content1', this)"
+            class="text-green-600 font-semibold mt-2 hover:underline"
+          >
+            READ MORE
+          </button>
         </div>
       </div>
+  
+      <!-- Repeat similar structure for EVENT MANAGER PRO cards -->
+      <div class=" shadow-lg rounded-lg p-4 bg-white relative transition-transform duration-300 hover:scale-105">
+        <div class="text-center">
+          <img src="Image/Event-manager-Pro.jpg" alt="Event Manager Pro" class="mx-auto w-40 h-40 mb-4">
+          <h3 class="font-bold text-lg text-blue-950">EVENT MANAGER PRO</h3>
+          <p class="text-sm text-gray-600 line-clamp-2" id="content2">
+            Discover the powerful features of our Salesforce integrated application for seamless event creation, management, and analysis.
+          </p>
+          <button
+            onclick="toggleContent('content2', this)"
+            class="text-green-600 font-semibold mt-2 hover:underline"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+
+      <!-- Repeat similar structure for PROPERTY MANTRA cards -->
+      <div class="bg-white shadow-lg rounded-lg p-4 relative transition-transform duration-300 hover:scale-105">
+        <div class="text-center">
+          <img src="Image/Property-mantra.png" alt="Event Manager Pro" class="mx-auto w-40 h-40 mb-4">
+          <h3 class="font-bold text-lg text-blue-950">PROPERTY MANTRA</h3>
+          <p class="text-sm text-gray-600 line-clamp-2" id="content3">
+            At Property Mantras, we bring your real estate aspirations
+            to life. Whether you’re searching for the perfect home, a lucrative investment opportunity,
+            or commercial spaces to expand your business, we’ve got you covered.
+          </p>
+          <button
+            onclick="toggleContent('content3', this)"
+            class="text-green-600 font-semibold mt-2 hover:underline"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+
+      <!-- Repeat similar structure for CBD cards -->
+      <div class="bg-white shadow-lg rounded-lg p-4 relative transition-transform duration-300 hover:scale-105">
+        <div class="text-center">
+          <img src="Image/cbd.png" alt="Event Manager Pro" class="mx-auto w-40 h-40 mb-4">
+          <h3 class="font-bold text-lg text-blue-950">CBD</h3>
+          <p class="text-sm text-gray-600 line-clamp-2" id="content4">
+            Ensure seamless and compliant deployments with our CBD App.
+            Our automation solutions deliver robust control and efficiency, meeting the stringent
+            demands of regulated industries.</p>
+          <button
+            onclick="toggleContent('content4', this)"
+            class="text-green-600 font-semibold mt-2 hover:underline"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+  
+      <!-- Add more cards as needed -->
     </div>
   </section>
 
@@ -638,10 +652,8 @@
             <!-- <h1 class="text-xl font-bold">Finance</h1> -->
             <p class="text-sm mt-2">Finance</p>
             <p class="text-sm mt-1">“CodM transformed our customer service. Their CRM solution centralized
-              information,
-              enabling prompt and personalized support. Increased customer satisfaction is now our norm. They've been
-              a
-              true partner in our journey towards service excellence.”</p>
+              information,enabling prompt and personalized support. Increased customer satisfaction is now our norm. They've been
+              a true partner in our journey towards service excellence.”</p>
           </div>
         </div>
       </div>
@@ -734,7 +746,7 @@
           </div>
         </div>
         <p class="text-sm text-left">
-          Founded in 2021, CodM specializes in world-class Salesforce CRM implementation and consulting services,
+          Founded in 2021, CodM specializes in world-class <br>Salesforce CRM implementation and consulting services,<br>
           with a global presence in two key locations, India and the UK. Our expert team of certified architects,
           consultants, and developers has successfully delivered numerous Salesforce projects across various
           industries
@@ -824,7 +836,7 @@
       © All Rights Reserved <span class="text-teal-500">CodM Software</span>
     </div>
   </footer>
-
+ 
 </body>
 
 </html>

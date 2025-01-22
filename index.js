@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-// JavaScript for CRM scroll
+// JavaScript for Salesforce CRM scroll
       const scrollContainer = document.getElementById("scrollContainer");
 
       let isDown = false;
@@ -94,3 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollContainer.scrollLeft = scrollLeft - walk;
       });
 
+   // JavaScript for Our Products
+      function toggleContent(id, button) {
+        const content = document.getElementById(id);
+        if (content.classList.contains("line-clamp-2")) {
+          content.classList.remove("line-clamp-2");
+          button.textContent = "READ LESS";
+        } else {
+          content.classList.add("line-clamp-2");
+          button.textContent = "READ MORE";
+        }
+      }

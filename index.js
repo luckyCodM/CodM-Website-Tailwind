@@ -61,14 +61,22 @@ document.addEventListener("DOMContentLoaded", function () {
   //   });
 
 
-  document.getElementById('menu-toggle').addEventListener('click', function () {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('absolute');
-    menu.classList.toggle('top-16'); // Position it below the header
-    menu.classList.toggle('w-full'); // Ensure full width
-  });
+  // document.getElementById('menu-toggle').addEventListener('click', function () {
+  //   const menu = document.getElementById('menu');
+  //   menu.classList.toggle('hidden');
+  //   menu.classList.toggle('absolute');
+  //   menu.classList.toggle('top-16'); // Position it below the header
+  //   menu.classList.toggle('w-full'); // Ensure full width
+  // });
   
+  
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
 
 // JavaScript for Salesforce CRM scroll
       const scrollContainer = document.getElementById("scrollContainer");

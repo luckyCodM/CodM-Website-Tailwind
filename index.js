@@ -60,13 +60,45 @@ document.addEventListener("DOMContentLoaded", function () {
   //     menu.classList.toggle("hidden");
   //   });
 
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
+  // const menuToggle = document.getElementById("menu-toggle");
+  // const menu = document.getElementById("menu");
 
-  menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
+  // menuToggle.addEventListener("click", () => {
+  //   menu.classList.toggle("hidden");
+  // });
+
+  
+  // JavaScript to handle menu toggle and auto-close on option select
+  // const menuToggle = document.getElementById('menu-toggle');
+  // const menu = document.getElementById('menu');
+  // const menuItems = document.querySelectorAll('.menu-item');
+
+  // // Toggle menu visibility
+  // menuToggle.addEventListener('click', () => {
+  //   menu.classList.toggle('hidden');
+  // });
+
+  // // Close menu when any option is clicked
+  // menuItems.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     menu.classList.add('hidden');
+  //   });
+  // });
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  const menuItems = document.querySelectorAll('.menu-item');
+
+  // Toggle menu visibility
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
   });
 
+  // Close menu when any option is clicked
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
 
 // JavaScript for Salesforce CRM scroll
       const scrollContainer = document.getElementById("scrollContainer");

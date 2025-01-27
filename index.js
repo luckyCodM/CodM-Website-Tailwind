@@ -52,38 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
-  // // <!-- JavaScript for Hamburger Menu -->
-  //   const menuToggle = document.getElementById("menu-toggle");
-  //   const menu = document.getElementById("menu");
-  
-  //   menuToggle.addEventListener("click", () => {
-  //     menu.classList.toggle("hidden");
-  //   });
-
-  // const menuToggle = document.getElementById("menu-toggle");
-  // const menu = document.getElementById("menu");
-
-  // menuToggle.addEventListener("click", () => {
-  //   menu.classList.toggle("hidden");
-  // });
-
-  
-  // JavaScript to handle menu toggle and auto-close on option select
-  // const menuToggle = document.getElementById('menu-toggle');
-  // const menu = document.getElementById('menu');
-  // const menuItems = document.querySelectorAll('.menu-item');
-
-  // // Toggle menu visibility
-  // menuToggle.addEventListener('click', () => {
-  //   menu.classList.toggle('hidden');
-  // });
-
-  // // Close menu when any option is clicked
-  // menuItems.forEach(item => {
-  //   item.addEventListener('click', () => {
-  //     menu.classList.add('hidden');
-  //   });
-  // });
+  // <!-- JavaScript for Hamburger Menu -->
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
   const menuItems = document.querySelectorAll('.menu-item');
@@ -100,60 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-// // JavaScript for Salesforce CRM scroll
-//       const scrollContainer = document.getElementById("scrollContainer");
+   // JavaScript for Our Products
+      function toggleContent(id, button) {
+        const content = document.getElementById(id);
+        if (content.classList.contains("line-clamp-2")) {
+          content.classList.remove("line-clamp-2");
+          button.textContent = "READ LESS";
+        } else {
+          content.classList.add("line-clamp-2");
+          button.textContent = "READ MORE";
+        }
+      }
 
-//       let isDown = false;
-//       let startX, scrollLeft;
-
-//       scrollContainer.addEventListener("mousedown", (e) => {
-//         isDown = true;
-//         scrollContainer.classList.add("cursor-grabbing");
-//         startX = e.pageX - scrollContainer.offsetLeft;
-//         scrollLeft = scrollContainer.scrollLeft;
-//       });
-
-//       scrollContainer.addEventListener("mouseleave", () => {
-//         isDown = false;
-//         scrollContainer.classList.remove("cursor-grabbing");
-//       });
-
-//       scrollContainer.addEventListener("mouseup", () => {
-//         isDown = false;
-//         scrollContainer.classList.remove("cursor-grabbing");
-//       });
-
-//       scrollContainer.addEventListener("mousemove", (e) => {
-//         if (!isDown) return;
-//         e.preventDefault();
-//         const x = e.pageX - scrollContainer.offsetLeft;
-//         const walk = (x - startX) * 2; // Adjust scroll speed
-//         scrollContainer.scrollLeft = scrollLeft - walk;
-//       });
-
-//    // JavaScript for Our Products
-//       function toggleContent(id, button) {
-//         const content = document.getElementById(id);
-//         if (content.classList.contains("line-clamp-2")) {
-//           content.classList.remove("line-clamp-2");
-//           button.textContent = "READ LESS";
-//         } else {
-//           content.classList.add("line-clamp-2");
-//           button.textContent = "READ MORE";
-//         }
-//       }
-
-
-
-
-// JavaScript for auto-scrolling the horizontal scroll container
+ // JavaScript for auto-scrolling the horizontal scroll container
 const scrollContainer = document.getElementById("scrollContainer");
 
 let scrollDirection = 1; // 1 for right, -1 for left
 let scrollSpeed = 1; // Pixels per step
 let scrollInterval;
 let userInteracted = false; // Flag to detect user interaction
-const userInteractionTimeout = 5000; // Time in ms to resume scrolling after interaction
+const userInteractionTimeout = 10000; // Time in ms to resume scrolling after interaction
 
 // Function to start auto-scrolling
 function startAutoScroll() {
@@ -162,14 +97,20 @@ function startAutoScroll() {
       const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
       scrollContainer.scrollLeft += scrollDirection * scrollSpeed;
 
-      // Reverse direction if at the edges
-      if (scrollContainer.scrollLeft >= maxScrollLeft) {
-        scrollDirection = -1; // Start scrolling left
-      } else if (scrollContainer.scrollLeft <= 0) {
-        scrollDirection = 1; // Start scrolling right
+      // Pause briefly at the edges before reversing direction
+      if (scrollContainer.scrollLeft >= maxScrollLeft && scrollDirection === 1) {
+        scrollDirection = 0; // Pause scrolling
+        setTimeout(() => {
+          scrollDirection = -1; // Then start scrolling left
+        }, 5000); // Pause for 2 seconds (adjust as needed)
+      } else if (scrollContainer.scrollLeft <= 0 && scrollDirection === -1) {
+        scrollDirection = 0; // Pause scrolling
+        setTimeout(() => {
+          scrollDirection = 1; // Then start scrolling right
+        }, 5000); // Pause for 2 seconds (adjust as needed)
       }
     }
-  }, 10); // Adjust interval timing for smoother scrolling
+  }, 20); // Adjust interval timing for smoother scrolling
 }
 
 // Function to stop auto-scrolling
@@ -211,4 +152,3 @@ scrollContainer.addEventListener("touchend", () => {
 
 // Initialize auto-scrolling
 startAutoScroll();
-

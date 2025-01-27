@@ -100,45 +100,115 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-// JavaScript for Salesforce CRM scroll
-      const scrollContainer = document.getElementById("scrollContainer");
+// // JavaScript for Salesforce CRM scroll
+//       const scrollContainer = document.getElementById("scrollContainer");
 
-      let isDown = false;
-      let startX, scrollLeft;
+//       let isDown = false;
+//       let startX, scrollLeft;
 
-      scrollContainer.addEventListener("mousedown", (e) => {
-        isDown = true;
-        scrollContainer.classList.add("cursor-grabbing");
-        startX = e.pageX - scrollContainer.offsetLeft;
-        scrollLeft = scrollContainer.scrollLeft;
-      });
+//       scrollContainer.addEventListener("mousedown", (e) => {
+//         isDown = true;
+//         scrollContainer.classList.add("cursor-grabbing");
+//         startX = e.pageX - scrollContainer.offsetLeft;
+//         scrollLeft = scrollContainer.scrollLeft;
+//       });
 
-      scrollContainer.addEventListener("mouseleave", () => {
-        isDown = false;
-        scrollContainer.classList.remove("cursor-grabbing");
-      });
+//       scrollContainer.addEventListener("mouseleave", () => {
+//         isDown = false;
+//         scrollContainer.classList.remove("cursor-grabbing");
+//       });
 
-      scrollContainer.addEventListener("mouseup", () => {
-        isDown = false;
-        scrollContainer.classList.remove("cursor-grabbing");
-      });
+//       scrollContainer.addEventListener("mouseup", () => {
+//         isDown = false;
+//         scrollContainer.classList.remove("cursor-grabbing");
+//       });
 
-      scrollContainer.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 2; // Adjust scroll speed
-        scrollContainer.scrollLeft = scrollLeft - walk;
-      });
+//       scrollContainer.addEventListener("mousemove", (e) => {
+//         if (!isDown) return;
+//         e.preventDefault();
+//         const x = e.pageX - scrollContainer.offsetLeft;
+//         const walk = (x - startX) * 2; // Adjust scroll speed
+//         scrollContainer.scrollLeft = scrollLeft - walk;
+//       });
 
-   // JavaScript for Our Products
-      function toggleContent(id, button) {
-        const content = document.getElementById(id);
-        if (content.classList.contains("line-clamp-2")) {
-          content.classList.remove("line-clamp-2");
-          button.textContent = "READ LESS";
-        } else {
-          content.classList.add("line-clamp-2");
-          button.textContent = "READ MORE";
-        }
+//    // JavaScript for Our Products
+//       function toggleContent(id, button) {
+//         const content = document.getElementById(id);
+//         if (content.classList.contains("line-clamp-2")) {
+//           content.classList.remove("line-clamp-2");
+//           button.textContent = "READ LESS";
+//         } else {
+//           content.classList.add("line-clamp-2");
+//           button.textContent = "READ MORE";
+//         }
+//       }
+
+
+
+
+// JavaScript for auto-scrolling the horizontal scroll container
+const scrollContainer = document.getElementById("scrollContainer");
+
+let scrollDirection = 1; // 1 for right, -1 for left
+let scrollSpeed = 1; // Pixels per step
+let scrollInterval;
+let userInteracted = false; // Flag to detect user interaction
+const userInteractionTimeout = 5000; // Time in ms to resume scrolling after interaction
+
+// Function to start auto-scrolling
+function startAutoScroll() {
+  scrollInterval = setInterval(() => {
+    if (!userInteracted) {
+      const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+      scrollContainer.scrollLeft += scrollDirection * scrollSpeed;
+
+      // Reverse direction if at the edges
+      if (scrollContainer.scrollLeft >= maxScrollLeft) {
+        scrollDirection = -1; // Start scrolling left
+      } else if (scrollContainer.scrollLeft <= 0) {
+        scrollDirection = 1; // Start scrolling right
       }
+    }
+  }, 10); // Adjust interval timing for smoother scrolling
+}
+
+// Function to stop auto-scrolling
+function stopAutoScroll() {
+  clearInterval(scrollInterval);
+}
+
+// Listen for user interactions
+scrollContainer.addEventListener("mousedown", () => {
+  userInteracted = true;
+  stopAutoScroll();
+});
+
+scrollContainer.addEventListener("mouseup", () => {
+  userInteracted = false;
+  setTimeout(() => {
+    if (!userInteracted) startAutoScroll();
+  }, userInteractionTimeout);
+});
+
+scrollContainer.addEventListener("mouseleave", () => {
+  userInteracted = false;
+  setTimeout(() => {
+    if (!userInteracted) startAutoScroll();
+  }, userInteractionTimeout);
+});
+
+scrollContainer.addEventListener("touchstart", () => {
+  userInteracted = true;
+  stopAutoScroll();
+});
+
+scrollContainer.addEventListener("touchend", () => {
+  userInteracted = false;
+  setTimeout(() => {
+    if (!userInteracted) startAutoScroll();
+  }, userInteractionTimeout);
+});
+
+// Initialize auto-scrolling
+startAutoScroll();
+

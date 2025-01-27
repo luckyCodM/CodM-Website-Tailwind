@@ -95,17 +95,80 @@
   <section id="home" class="bg-center h-full" style="background-image: url('Image/top_screen.jpg');">
 
     <!-- WhatsApp Floating Button -->
-  <section class="fixed bottom-4 right-4 z-50">
+  <!-- <section class="fixed bottom-4 right-4 z-50">
       <a href="https://wa.me/9871717425" target="_blank">
         <img src="Image/whatsup.png" alt="WhatsApp" class="w-14 h-14">
       </a>
-    </section>
+    </section> -->
     <!-- Salesforce Consulting Floating Button -->
     <section class="fixed bottom-4 left-4 z-50">
       <!-- <a href="https://wa.me/9871717425" target="_blank"> -->
       <img src="Image/Consulting.png" alt="WhatsApp" class="w-14 h-14">
       </a>
     </section>
+
+    <section class="relative bg-gray-100  flex items-center justify-center">
+      <!-- WhatsApp Chatbox Pop-up -->
+      <div id="whatsapp-popup" class="hidden fixed bottom-6 right-6 w-80 bg-white rounded-2xl shadow-lg border border-green-500 z-50">
+        <div class="p-4">
+          <!-- Header -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <img src="Image/Chart-boat.png" alt="chart-Boat" class="w-12 h-12 rounded-full ">
+              <div>
+                <h3 class="text-lg font-bold text-blue-950">Codm Software</h3>
+                <p class="text-sm text-gray-500">Boat expert</p>
+              </div>
+            </div>
+            <button onclick="hidePopup()" class="text-green-500 hover:text-green-500 w-5 h-5">&times;</button>
+          </div>
+    
+          <!-- Chat Message -->
+          <div class="mt-4">
+            <p class="text-sm text-gray-700">Please let me know who you would like to chat with.</p>
+          </div>
+    
+          <!-- Chat Button -->
+          <a href="https://wa.me/9871717425" target="_blank" class="mt-4 flex items-center justify-center gap-2 px-4 
+          py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition w-full">
+            <img src="Image/whatsup.svg" alt="WhatsApp Icon" class="w-8 h-8">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    
+      <!-- Floating WhatsApp Icon -->
+      <div id="whatsapp-icon" class="fixed bottom-6 right-6 z-40">
+        <button onclick="showPopup()" class="relative bg-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+          <img src="Image/whatsup.svg" alt="WhatsApp Icon" class="w-10 h-10">
+          <div class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
+          <div class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full"></div>
+        </button>
+      </div>
+    
+      <script>
+        // Show pop-up after 5 seconds
+        window.onload = () => {
+          setTimeout(() => {
+            document.getElementById("whatsapp-popup").classList.remove("hidden");
+            document.getElementById("whatsapp-icon").classList.add("hidden");
+          }, 5000);
+        };
+    
+        // Function to show pop-up manually
+        function showPopup() {
+          document.getElementById("whatsapp-popup").classList.remove("hidden");
+          document.getElementById("whatsapp-icon").classList.add("hidden");
+        }
+    
+        // Function to hide pop-up
+        function hidePopup() {
+          document.getElementById("whatsapp-popup").classList.add("hidden");
+          document.getElementById("whatsapp-icon").classList.remove("hidden");
+        }
+      </script>
+    
+     </section>
 
     <!-- Header Section -->
     <header class=" text-white py-2 px-1 lg:px-10 fixed top-0 left-0 w-full z-50 bg-blue-950">
@@ -274,7 +337,7 @@
         </div>
       </div>
     </section>
-  </section>
+  </section>  
 
   <!-- New Products Section -->
   <section id="our-product" class="px-4 py-10 bg-gray-50 text-center">

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
           if (count < target) {
             counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 20);
+            setTimeout(updateCount, 100);
           } else {
             counter.innerText = target;
           }
@@ -89,66 +89,87 @@ let scrollSpeed = 1; // Pixels per step
 let scrollInterval;
 let userInteracted = false; // Flag to detect user interaction
 const userInteractionTimeout = 10000; // Time in ms to resume scrolling after interaction
+const edgePauseTime = 2000; // Pause at edges (in ms)
 
-// Function to start auto-scrolling
-function startAutoScroll() {
-  scrollInterval = setInterval(() => {
-    if (!userInteracted) {
-      const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-      scrollContainer.scrollLeft += scrollDirection * scrollSpeed;
+// Function to handle auto-scrolling
+function autoScroll() {
+  const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
-      // Pause briefly at the edges before reversing direction
-      if (scrollContainer.scrollLeft >= maxScrollLeft && scrollDirection === 1) {
-        scrollDirection = 0; // Pause scrolling
-        setTimeout(() => {
-          scrollDirection = -1; // Then start scrolling left
-        }, 5000); // Pause for 2 seconds (adjust as needed)
-      } else if (scrollContainer.scrollLeft <= 0 && scrollDirection === -1) {
-        scrollDirection = 0; // Pause scrolling
-        setTimeout(() => {
-          scrollDirection = 1; // Then start scrolling right
-        }, 5000); // Pause for 2 seconds (adjust as needed)
-      }
-    }
-  }, 20); // Adjust interval timing for smoother scrolling
+  // Update scroll position
+  scrollContainer.scrollLeft += scrollDirection * scrollSpeed;
+
+  // Check if we've hit an edge
+  if (scrollContainer.scrollLeft >= maxScrollLeft && scrollDirection === 1) {
+    pauseScroll(-1); // Pause, then reverse direction
+  } else if (scrollContainer.scrollLeft <= 0 && scrollDirection === -1) {
+    pauseScroll(1); // Pause, then reverse direction
+  }
 }
 
-// Function to stop auto-scrolling
+// Pause scrolling briefly at edges
+function pauseScroll(newDirection) {
+  stopAutoScroll(); // Stop scrolling
+  setTimeout(() => {
+    scrollDirection = newDirection; // Reverse direction
+    if (!userInteracted) startAutoScroll(); // Resume scrolling if no user interaction
+  }, edgePauseTime);
+}
+
+// Start auto-scrolling
+function startAutoScroll() {
+  if (!scrollInterval) {
+    scrollInterval = setInterval(autoScroll, 20); // Adjust timing for smoother scrolling
+  }
+}
+
+// Stop auto-scrolling
 function stopAutoScroll() {
   clearInterval(scrollInterval);
+  scrollInterval = null;
 }
 
-// Listen for user interactions
-scrollContainer.addEventListener("mousedown", () => {
+// Handle user interaction
+function onUserInteraction() {
   userInteracted = true;
   stopAutoScroll();
-});
+}
 
-scrollContainer.addEventListener("mouseup", () => {
+function onInteractionEnd() {
   userInteracted = false;
   setTimeout(() => {
     if (!userInteracted) startAutoScroll();
   }, userInteractionTimeout);
-});
+}
 
-scrollContainer.addEventListener("mouseleave", () => {
-  userInteracted = false;
-  setTimeout(() => {
-    if (!userInteracted) startAutoScroll();
-  }, userInteractionTimeout);
-});
-
-scrollContainer.addEventListener("touchstart", () => {
-  userInteracted = true;
-  stopAutoScroll();
-});
-
-scrollContainer.addEventListener("touchend", () => {
-  userInteracted = false;
-  setTimeout(() => {
-    if (!userInteracted) startAutoScroll();
-  }, userInteractionTimeout);
-});
+// Add event listeners for interaction
+scrollContainer.addEventListener("mousedown", onUserInteraction);
+scrollContainer.addEventListener("mouseup", onInteractionEnd);
+scrollContainer.addEventListener("mouseleave", onInteractionEnd);
+scrollContainer.addEventListener("touchstart", onUserInteraction);
+scrollContainer.addEventListener("touchend", onInteractionEnd);
 
 // Initialize auto-scrolling
 startAutoScroll();
+
+
+  // Responsive Navigation Bar scrol nav tab
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all anchor links with hashes
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    
+    navLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        const targetId = this.getAttribute("href").substring(1); // Get the target ID
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          // Smooth scroll to the target element
+          window.scrollTo({
+            top: targetElement.offsetTop -70, // Offset for fixed nav (adjust as needed)
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+  });

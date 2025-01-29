@@ -208,3 +208,5 @@ startAutoScroll();
             index = (index - 1 + animals.length) % animals.length;
             updateSlide();
         }
+
+

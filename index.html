@@ -768,38 +768,35 @@
       </div>
   </section>
 
-  <sectionc class="flex flex-col items-center justify-center bg-gray-100 text-white">
-    <h2 class="text-center text-2xl font-bold text-blue-950 mb-8">OUR EXCELLENCE</h2>
-    <div class="flex items-center gap-6">
-      <!-- Image Section (Left) -->
-      <div class="relative w-80 h-80">
-          <div id="carousel-card" class="absolute inset-0 transform scale-105 bg-green-500 border-none shadow-lg rounded-lg overflow-hidden">
-              <img id="carousel-image" src="Image/Administrator.png" alt="Tiger" class="object-cover w-60 h-60 m-8" />
-          </div>
-      </div>
-  
-      <!-- Text Section (Right) -->
-      <div class="flex flex-col items-center">
-        <h2 class="text-center text-2xl font-bold text-blue-950 mb-4">Our Certificates</h2>
-          <p id="carousel-index" class="text-2xl font-bold text-blue-950">1/12</p>
-          <h2 id="carousel-title" class="text-2xl font-bold text-blue-950">Administrator.png</h2>
-          <p id="carousel-scientific" class="text-blue-950 italic">Certificate</p>
-          
-          <!-- Navigation Buttons -->
-          <div class="flex gap-4 mt-4">
-              <button onclick="prevSlide()" class="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
-                  &#9665;
-              </button>
-              <button onclick="nextSlide()" class="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
-                  &#9655;
-              </button>
-          </div>
-      </div>
-  </div>
-    </sectionc>
+  <section class="flex flex-col items-center justify-center bg-gray-100 text-white py-10 px-4">
+    <h2 class="text-center text-2xl md:text-3xl font-bold text-blue-950 mb-8">OUR EXCELLENCE</h2>
+    <div class="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
+        <!-- Image Section (Left) -->
+        <div class="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
+            <div id="carousel-card" class="absolute inset-0 transform scale-105 bg-green-500 border-none shadow-lg rounded-lg overflow-hidden">
+                <img id="carousel-image" src="Image/Administrator.png" alt="Certificate" class="object-cover w-full h-full" />
+            </div>
+        </div>
 
-
-  
+        <!-- Text Section (Right) -->
+        <div class="flex flex-col items-center text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-950 mb-4">Our Certificates</h2>
+            <p id="carousel-index" class="text-xl font-bold text-blue-950">1/12</p>
+            <h2 id="carousel-title" class="text-xl font-bold text-blue-950">Administrator.png</h2>
+            <p id="carousel-scientific" class="text-blue-950 italic">Certificate</p>
+            
+            <!-- Navigation Buttons -->
+            <div class="flex gap-4 mt-4">
+                <button onclick="prevSlide()" class="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+                    &#9665;
+                </button>
+                <button onclick="nextSlide()" class="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+                    &#9655;
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
 
   <!-- Section: Trusted By -->
   <section class="bg-gray-100 py-10 overflow-hidden text-center">

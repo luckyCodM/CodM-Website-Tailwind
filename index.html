@@ -567,61 +567,64 @@
     </div>
   </section>
 
-  <!-- Section case studies -->
-  <section id="case-studies" class="bg-gray-50 py-10 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">CASE STUDIES</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-md p-6 position-relative">
-          <div class="flex justify-center mb-4">
-            <img src="Image/NGO.png" alt="Non Profit NGO" class="w-25 h-25 bg-center">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Non Profit (NGO)</h3>
-          <p class="text-gray-500 mb-4 text-sm ">
-            Case study on a Salesforce implementation project for an NGO involves
-            several key steps to effectively showcase the project's objectives, challenges, solutions, and outcomes.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Salesforce-Education.jpg" alt="Salesforce Education Cloud" class="w-30 bg-center h-30">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Salesforce Education Cloud and Experience Cloud</h3>
-          <p class="text-gray-500 mb-4 text-sm">
-            Case Study: Implementing Salesforce Education Cloud and Experience Cloud for a UK Public University.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Financial-cloud.png" alt="Salesforce Financial Services Cloud" class="w-30 bg-center h-30">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Salesforce Financial Services Cloud and Experience Cloud</h3>
-          <p class="text-gray-500 mb-4 text-sm">
-            Case Study: Implementing Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based
-            Bank.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex justify-center mb-4">
-            <img src="Image/Financial-cloud.png" alt="Salesforce Financial Services Cloud" class="w-30 bg-center h-30">
-          </div>
-          <h3 class="text-ml font-bold mb-2">Salesforce Financial Services Cloud and Experience Cloud</h3>
-          <p class="text-gray-500 mb-4 text-sm">
-            Case Study: Implementing Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based
-            Bank.
-          </p>
-          <a href="#" class="text-green-500 font-semibold">Read More</a>
-        </div>
+  <!-- CASE STUDIES Section -->
+<section id="case-studies" class="px-4 py-10 bg-gray-50 text-center">
+  <!-- Section Title -->
+  <h2 class="text-2xl font-bold text-center mb-8 text-blue-950">CASE STUDIES</h2>
+  
+  <!-- Responsive Grid for Case Studies -->
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+    <!-- Case Study Card -->
+    <div class="bg-white shadow-lg rounded-lg p-4">
+      <div class="text-center">
+        <img src="Image/NGO.png" alt="Non Profit (NGO)" class="mx-auto w-40 h-40 mb-4">
+        <h3 class="font-bold text-lg text-blue-950">Non Profit (NGO)</h3>
+        <p class="text-sm text-gray-600 line-clamp-2" id="content1">
+          Case study on a Salesforce implementation project for an NGO involves several key steps...
+        </p>
+        <button onclick="toggleContent('content1', this)" class="text-green-600 font-semibold mt-2 hover:underline">READ MORE</button>
       </div>
     </div>
-  </section>
+
+    <!-- Salesforce Education Cloud -->
+    <div class="bg-white shadow-lg rounded-lg p-4">
+      <div class="text-center">
+        <img src="Image/Salesforce-Education.jpg" alt="Salesforce Education Cloud" class="mx-auto w-40 h-40 mb-4">
+        <h3 class="font-bold text-lg text-blue-950">Salesforce Education Cloud</h3>
+        <p class="text-sm text-gray-600 line-clamp-2" id="content2">
+          Implementing Salesforce Education Cloud and Experience Cloud for a UK Public University.
+        </p>
+        <button onclick="toggleContent('content2', this)" class="text-green-600 font-semibold mt-2 hover:underline">READ MORE</button>
+      </div>
+    </div>
+    
+    <!-- Salesforce Experience Cloud -->
+    <div class="bg-white shadow-lg rounded-lg p-4">
+      <div class="text-center">
+        <img src="Image/Financial-cloud.png" alt="Salesforce Experience Cloud" class="mx-auto w-40 h-40 mb-4">
+        <h3 class="font-bold text-lg text-blue-950">Salesforce Experience Cloud</h3>
+        <p class="text-sm text-gray-600 line-clamp-2" id="content3">
+          Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based Bank.
+        </p>
+        <button onclick="toggleContent('content3', this)" class="text-green-600 font-semibold mt-2 hover:underline">READ MORE</button>
+      </div>
+    </div>
+    
+    <!-- Salesforce Financial Cloud -->
+    <div class="bg-white shadow-lg rounded-lg p-4">
+      <div class="text-center">
+        <img src="Image/Financial-cloud.png" alt="Salesforce Financial Cloud" class="mx-auto w-40 h-40 mb-4">
+        <h3 class="font-bold text-lg text-blue-950">Salesforce Financial Cloud</h3>
+        <p class="text-sm text-gray-600 line-clamp-2" id="content4">
+          Salesforce Financial Services Cloud and Experience Cloud for a South Africa Based Bank.
+        </p>
+        <button onclick="toggleContent('content4', this)" class="text-green-600 font-semibold mt-2 hover:underline">READ MORE</button>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
   <!-- section Expand Your Business -->
   <section class="bg-[#60F47E] text-white py-5 rounded-xl shadow-md">

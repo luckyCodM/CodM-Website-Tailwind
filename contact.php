@@ -30,6 +30,6 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
         echo "Mail send failed!";
     }
 } else {
-    echo '<script>alert("Please fill in all required fields."); window.location.href = "contact.html";</script>';
+    echo '<script>alert("Please fill in all required fields."); window.location.href = "contact.php";</script>';
 }
 ?>

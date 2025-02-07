@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Smooth scroll functionality
     const scrollToStats = document.getElementById("scrollToStats");

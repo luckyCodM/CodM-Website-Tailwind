@@ -1,5 +1,33 @@
 
+// // Show pop-up after 5 seconds
+// window.onload = () => {
+//   setTimeout(() => {
+//     document.getElementById("whatsapp-popup").classList.remove("hidden");
+//     document.getElementById("whatsapp-icon").classList.add("hidden");
+//   }, 5000);
+// };
+
+// // Function to show pop-up manually
+// function showPopup() {
+//   document.getElementById("whatsapp-popup").classList.remove("hidden");
+//   document.getElementById("whatsapp-icon").classList.add("hidden");
+// }
+
+// // Function to hide pop-up
+// function hidePopup() {
+//   document.getElementById("whatsapp-popup").classList.add("hidden");
+//   document.getElementById("whatsapp-icon").classList.remove("hidden");
+// }
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
+
     // Smooth scroll functionality
     const scrollToStats = document.getElementById("scrollToStats");
     if (scrollToStats) {
@@ -53,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+
+
 
 
   // <!-- JavaScript for Hamburger Menu -->

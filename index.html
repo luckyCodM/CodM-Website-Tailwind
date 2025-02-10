@@ -4,20 +4,20 @@
 <head>
 
   <!-- Googlebot Meta Description -->
-  <meta name="description" content="CodM Software: Salesforce CRM, API integrations & data migration experts. Boost efficiency with custom cloud solutions in the UK, USA, Europe" />
+  <meta name="character" content="CodM Software: Salesforce CRM, API integrations & data migration experts. Boost efficiency with custom cloud solutions in the UK, USA, Europe" />
 
   <!-- SEO Optimized Meta Tags -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="keywords"
-    content="Salesforce consulting, Salesforce partner, CRM solutions, API integrations, data migration, cloud CRM, business automation, custom CRM solutions, UK CRM services, USA Salesforce expert, European CRM development" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-figure-preview:large, max-video-preview:-1" />
+  <meta name="labels"
+    content="Salesforce consulting, Salesforce partner, CRM solutions, API integrations, data transfer, cloud CRM, business automation, custom CRM solutions, UK CRM services, USA Salesforce expert, European CRM development" />
   <meta name="author" content="CodM Software" />
-  <meta property="og:title" content="CodM Software | Leading Salesforce Consulting Partner in UK, USA & Europe" />
-  <meta name="twitter:title" content="CodM Software - Expert Salesforce Solutions in UK, USA & Europe" />
-  <meta name="description"
-    content="CodM Software provides top-rated Salesforce CRM solutions, API integrations, and data migration services in the UK, USA, and Europe. Contact us for expert consulting today!" />
-  <meta property="og:description"
+  <meta asset="og:title" content="CodM Software | Leading Salesforce Consulting Partner in UK, USA & Europe" />
+  <meta name="X:title" content="CodM Software - Expert Salesforce Solutions in UK, USA & Europe" />
+  <meta name="character"
+    content="CodM Software provides top-rated Salesforce CRM solutions, API integrations, and data transfer services in the UK, USA, and Europe. Contact us for expert consulting today!" />
+  <meta property="og:character"
     content="Boost business growth with CodM Software's Salesforce CRM expertise. Serving the UK, USA, and Europe with advanced automation and cloud solutions." />
-  <meta name="twitter:description"
+  <meta name="twitter:character"
     content="Optimize your CRM with CodM Software's Salesforce solutions in the UK, USA & Europe. Get in touch today!" />
   <meta property="og:url" content="https://www.codmsoftware.com/" />
   <meta property="og:site_name" content="CodM Software" />
@@ -49,7 +49,6 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
 
   <!-- Flip Card -->
   <style>
@@ -114,7 +113,103 @@
       </a>
     </section>
 
-     <!-- WhatsApp Chatbox Pop-up -->
+
+    <Section class=" top-20 font-sans bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center z-50">
+      <!-- Overlay -->
+      <div class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 text-2xl" id="overlay" onclick="closePopup()"></div>
+  
+      <!-- Popup Form -->
+      <div class=" z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg w-3/4 md:w-1/2 flex hidden"
+          id="popupForm">
+          <div class="w-1/2 hidden md:flex items-center justify-center bg-gray-100 p-6 rounded-l-lg  ">
+              <img src="Image/flat-style.png" alt="Illustration" class="w-full h-auto">
+          </div>
+          <div class="w-full md:w-1/2 p-6">
+              <div class="flex justify-between items-center mb-4 mt-12">
+                  <h2 class="text-xl font-semibold">Salesforce Development Services</h2>
+                  <button onclick="closePopup()" class="text-gray-500 text-gray-500 text-2xl transform transition-transform duration-300 hover:scale-125 ">&times;</button>
+              </div>
+              <form class="space-y-4"
+                  action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
+                  method="POST">
+                  <input type="hidden" name="oid" value="00DH40000008jfE">
+                  <input type="hidden" name="retURL" value="http://google.com">
+  
+                  <div class="grid grid-cols-2 gap-4">
+                      <div>
+                          <label for="first_name" class="block text-sm font-medium text-gray-700">First Name*</label>
+                          <input type="text" id="first_name" name="first_name" placeholder="First Name"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                      </div>
+                      <div>
+                          <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name*</label>
+                          <input type="text" id="last_name" name="last_name" placeholder="Last Name"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                      </div>
+                  </div>
+  
+                  <div class="grid grid-cols-2 gap-4">
+                      <div>
+                          <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number*</label>
+                          <input type="text" id="phone" name="phone" placeholder="Phone Number"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                      </div>
+                      <div>
+                          <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
+                          <input type="email" id="email" name="email" placeholder="Email"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                      </div>
+                  </div>
+  
+                  <div class="grid grid-cols-2 gap-4">
+                      <div>
+                          <label for="company" class="block text-sm font-medium text-gray-700">Company*</label>
+                          <input type="text" id="company" name="company" placeholder="Company"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                      </div>
+                      <div>
+                          <label for="city" class="block text-sm font-medium text-gray-700">City*</label>
+                          <input type="text" id="city" name="city" placeholder="City"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                      </div>
+                  </div>
+  
+                  <label for="message" class="block text-sm font-medium text-gray-700"> How can we help you?</label>
+                  <textarea id="message" name="description" rows="2" placeholder="How can we help you?"
+                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+  
+                  <div class="flex justify-center">
+                      <button type="submit"
+                          class="mt-2 px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
+                          Submit
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  
+      <!-- Floating Button -->
+      <div class="fixed bottom-6 right-6 z-40 border border-green-500 rounded-full">
+      <button onclick="openPopup()" class="fixed text-white shadow-lg items-center z-50  relative bg-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+          <img src="Image/From-icon.jpg" alt="Open Form" class="w-12 h-12 rounded shodow-lg">
+      </button>
+      </div>
+  
+  
+      <script>
+          function openPopup() {
+              document.getElementById('popupForm').classList.remove('hidden');
+              document.getElementById('overlay').classList.remove('hidden');
+          }
+  
+          function closePopup() {
+              document.getElementById('popupForm').classList.add('hidden');
+              document.getElementById('overlay').classList.add('hidden');
+          }
+      </script>
+    </Section>
+
+    <!-- WhatsApp Chatbox Pop-up -->
     <!-- <section class="relative bg-gray-100  flex items-center justify-center">
       <div id="whatsapp-popup"
         class="hidden fixed bottom-6 right-6 w-80 bg-white rounded-2xl shadow-lg border border-green-500 z-50">
@@ -1053,20 +1148,20 @@
         <div class="bg-gray-100 rounded p-5 shadow-md">
           <h1 class="text-2xl font-semibold text-center mb-2 text-blue-950">Contact Us</h1>
           <form
-            action="https://codmsoftwareprivatelimited3--lucky.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DH40000008jfE"
+            action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
             method="POST" class="space-y-4">
-            <input type="hidden" name="orgid" value="00DH40000008jfE">
-            <input type="hidden" name="retURL" value="http://google.com">
+            <input type=hidden name="oid" value="00DH40000008jfE">
+            <input type=hidden name="retURL" value="http://google.com">
 
             <div class="grid grid-cols-2 gap-4">
               <div>
-                <label for="first_name" class="block text-sm font-medium text-gray-700">Your Name*</label>
-                <input type="text" id="first_name" name="name" placeholder="Your Name"
+                <label for="first_name" class="block text-sm font-medium text-gray-700">First Name*</label>
+                <input type="text" id="first_name" name="last_name" placeholder="First Name"
                   class="w-full px-3 text-black py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
               </div>
               <div>
                 <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name*</label>
-                <input type="text" id="last_name" name="name" placeholder="Last Name"
+                <input type="text" id="last_name" name="last_name" placeholder="Last Name"
                   class="w-full px-3 text-black py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
               </div>
             </div>
@@ -1080,6 +1175,18 @@
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
                 <input type="email" id="email" name="email" placeholder="Email"
+                  class="w-full px-3 text-black py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700">Company*</label>
+                <input type="text" id="company" name="company" placeholder="Company"
+                  class="w-full px-3 text-black py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div>
+                <label for="city" class="block text-sm font-medium text-gray-700">City*</label>
+                <input type="text" id="city" name="city" placeholder="city"
                   class="w-full px-3 text-black py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
               </div>
             </div>

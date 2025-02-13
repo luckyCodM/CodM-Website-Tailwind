@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CODM SOFTWARE | Salesforce Consulting Partner UK</title>
@@ -32,8 +32,8 @@
   <meta name="twitter:description"
     content="Optimize your CRM with CodM Software's Salesforce solutions in the UK, USA & Europe. Get in touch today!" />
     <meta name="twitter:title" content="codmsoftware.com" />
-    <meta name="twitter:image" content="Image/twitter.png" />
-    <meta property="og:image:secure_url" content="Image/Codm-logo.png"/>
+    <meta name="twitter:image" content="Image\CodM Software.png" />
+    <meta property="og:image:secure_url" content="Image\CodM Software.png"/>
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="380" />
     <meta property="og:url" content="codmsoftware.com" />
@@ -574,7 +574,7 @@
       </div>
 
       <!-- Floating Button -->
-      <div class="fixed bottom-6 right-6 z-40 border border-green-500 rounded-full">
+      <div class="fixed bottom-6 right-6 z-50 border border-green-500 rounded-full">
         <button onclick="openPopup()"
           class="fixed text-white shadow-lg items-center z-50  relative bg-white p-4 rounded-full shadow-lg hover:scale-110 transition">
           <img src="Image/From-icon.jpg" alt="Open Form Icon" title="Open Form" class="w-12 h-12 rounded shadow-lg">
@@ -1299,6 +1299,41 @@
     }
   </style>
 
+  <!-- Customised CRM Section -->
+  <section id="crm-solutions" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Image Section -->
+            <div class="md:w-1/2">
+              <img src="Image/CodM-Software-crm.png" alt="Customised CRM Solutions for Business Success" title="Customised CRM Solutions by CodM Software - Enhance Your Business Efficiency" class="rounded-lg shadow-lg">
+            </div>
+            <!-- Content Section -->
+            <div class="md:w-1/2 md:pl-12 mt-2 md:mt-0">
+                <h2 class="text-4xl font-bold text-gray-800">Customised CRM Solutions 
+                  of Our Unique Success Story</h2>
+                <!-- <p class="mt-4 text-gray-600">For Your Unique Success</p> -->
+                <p class="mt-4 text-gray-600">Salesforce CRM, API integrations & data migration experts. Boost efficiency with custom cloud solutions in the UK, USA, Europe.</p>
+                <div class="mt-6">
+                  <a href="#crm-solutions" id="downloadPdf" title="Customised CRM Solutions" class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-blue-950 transition duration-300">
+                    Company Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for PDF Download -->
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = 'Image/PDF/CodM Profile.pdf.pdf'; // Replace with the actual path to your PDF file
+        link.download = 'Company_Profile.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
+
   <!-- Footer -->
   <footer id="footer" class="bg-blue-950 text-white py-10" style="background-image: url('Image/top_screen.jpg');">
     <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -1341,7 +1376,7 @@
         <p class="font-semibold text-lg mb-4">Quick Links</p>
         <ul class="grid grid-cols-2 md:grid-cols-1 gap-2 text-white">
           <li><a href="#home" class="hover:text-blue-500" title="Home Page">Home</a></li>
-          <li><a href="#about-us" class="hover:text-blue-500" title="Learn more about us">About us</a></li>
+          <li><a href="#crm-solutions" class="hover:text-blue-500" title="Learn more about us">About us</a></li>
           <li><a href="#blog" class="hover:text-blue-500" title="Read our latest blog posts">Blog</a></li>
           <li><a href="#contact-form" class="hover:text-blue-500" title="Get in touch with us">Contact us</a></li>
           <li><a href="#our-product" class="hover:text-blue-500" title="Explore our products">Products</a></li>

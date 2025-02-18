@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="UTF-8">
@@ -499,12 +498,12 @@
   </section>
 
   <!-- Salesforce Form  Icon Floating Button -->
-  <Section class="font-sans bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center">
+  <!-- <Section class="font-sans bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center"> -->
     <!-- Overlay -->
-    <div class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 text-2xl" id="overlay" onclick="closePopup()"></div>
+    <!-- <div class="fixed inset-0 hidden text-2xl" id="overlay" onclick="closePopup()"></div> -->
 
     <!-- Popup Form -->
-    <div
+    <!-- <div
       class="z-50 visible fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg w-3/4 md:w-1/2 flex hidden"
       id="popupForm">
       <div class="w-1/2 hidden md:flex items-center justify-center bg-gray-100 p-6 rounded-l-lg   ">
@@ -514,7 +513,7 @@
         <div class="flex justify-between items-center mb-4">
           <p class="text-xl font-semibold">Salesforce Development Services</p>
           <button onclick="closePopup()"
-            class="text-gray-500  text-gray-500 text-2xl transform transition-transform duration-300 hover:scale-125">&times;</button>
+            class="text-gray-500  text-gray-500 text-3xl transform transition-transform duration-300 hover:scale-125">&times;</button>
         </div>
         <form class="space-y-4"
           action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
@@ -573,18 +572,17 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- Floating Button -->
-    <div class="fixed bottom-6 right-6 z-50 border border-green-500 rounded-full">
+    <!-- <div class="fixed bottom-6 right-6 z-50 border border-green-500 rounded-full">
       <button onclick="openPopup()"
         class="fixed text-white shadow-lg items-center z-50  relative bg-white p-4 rounded-full shadow-lg hover:scale-110 transition">
         <img src="Image/From-icon.jpg" alt="Open Form Icon" title="Open Form" class="w-12 h-12 rounded shadow-lg">
       </button>
-    </div>
+    </div> -->
 
-
-    <script>
+    <!-- <script>
       function openPopup() {
         document.getElementById('popupForm').classList.remove('hidden');
         document.getElementById('overlay').classList.remove('hidden');
@@ -594,10 +592,116 @@
         document.getElementById('popupForm').classList.add('hidden');
         document.getElementById('overlay').classList.add('hidden');
       }
+    </script> -->
+  <!-- </Section> -->
+
+
+  <section class="font-sans bg-gradient-to-r  flex items-center justify-center">
+    <!-- Overlay -->
+    <div class="fixed inset-0 hidden bg-black bg-opacity-50 text-2xl" id="overlay" onclick="closePopup()"></div>
+  
+    <!-- Popup Form -->
+    <div
+      class="z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg w-11/12 md:w-4/4 lg:w-1/2 xl:w-3/3 flex flex-col md:flex-row hidden"
+      id="popupForm">
+      <!-- Image Section (Hidden on small screens) -->
+      <div class="w-full md:w-1/2 hidden md:flex items-center justify-center bg-gray-100 p-6 rounded-l-lg">
+        <img src="Image/flat-style.png" alt="flat-style" title="flat-style" class="w-full h-auto">
+      </div>
+  
+      <!-- Form Section -->
+      <div class="w-full md:w-1/2 p-4 md:p-6">
+        <div class="flex justify-between items-center mb-4">
+          <p class="text-lg md:text-xl font-semibold">Send Your Inquiry</p>
+          <button onclick="closePopup()"
+            class="text-gray-500 text-3xl p-2 transform transition-transform duration-300 hover:scale-125 focus:outline-none">&times;</button>  
+        </div>
+        <form class="space-y-4"
+          action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
+          method="POST">
+          <input type="hidden" name="oid" value="00DH40000008jfE">
+          <input type="hidden" name="retURL" value="http://google.com">
+  
+          <!-- First Name and Last Name -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="first_name" class="block text-sm font-medium text-gray-700">First Name<span class="text-red-500">*</span></label>
+              <input type="text" id="first_name" name="first_name" placeholder="First Name"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 required">
+            </div>
+            <div>
+              <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+          </div>
+  
+          <!-- Phone and Email -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number<span class="text-red-500">*</span></label>
+              <input type="text" id="phone" name="phone" placeholder="Phone Number"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 required">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email<span class="text-red-500">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Email"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 required">
+            </div>
+          </div>
+  
+          <!-- Company and Country -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="company" class="block text-sm font-medium text-gray-700">Company<span class="text-red-500">*</span></label>
+              <input type="text" id="company" name="company" placeholder="Company"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 required">
+            </div>
+            <div>
+              <label for="city" class="block text-sm font-medium text-gray-700">Country<span class="text-red-500">*</span></label>
+              <input type="text" id="city" name="city" placeholder="Country"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+          </div>
+  
+          <!-- Message -->
+          <label for="message" class="block text-sm font-medium text-gray-700">How can we help you?</label>
+          <textarea id="message" name="description" rows="2" placeholder="How can we help you?"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+  
+          <!-- Submit Button -->
+          <div class="flex justify-center">
+            <button type="submit"
+              class="mt-2 px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50 border border-green-500 rounded-full">
+      <button onclick="openPopup()"
+        class="fixed text-white shadow-lg items-center z-50 relative bg-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+        <img src="Image/From-icon.jpg" alt="Open Form Icon" title="Click to Open" class="w-12 h-12 rounded shadow-lg">
+      </button>
+    </div>
+  
+    <script>
+      function openPopup() {
+        document.getElementById('popupForm').classList.remove('hidden');
+        document.getElementById('overlay').classList.remove('hidden');
+      }
+  
+      function closePopup() {
+        document.getElementById('popupForm').classList.add('hidden');
+        document.getElementById('overlay').classList.add('hidden');
+      }
     </script>
-  </Section>
-
-
+  </section>
+   
+  
   <!-- New Products Section -->
   <section id="our-product" class="px-4 py-10 bg-gray-50 text-center">
     <!-- Section Title -->

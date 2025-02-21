@@ -368,18 +368,16 @@
         <!-- Social Media Icons -->
         <div class="flex justify-center space-x-4 mt-4 px-1 py-1">
           <a href="https://x.com/CodMSoftware" target="_blank" rel="noopener noreferrer"
-            aria-label="Follow us on Twitter" title="Follow us on Twitter for updates and news">
-            <img src="Image/twitter.png" alt="Follow us on Twitter for Call of Duty Mobile updates"
-              title="Follow us on Twitter" class="w-7 h-7">
+            aria-label="Follow us on Twitter" title="Follow us on Twitter">
+            <img src="Image/twitter.png" alt="twitter" title="Follow us on Twitter" class="w-7 h-7">
           </a>
-          <a href="mailto:someone@example.com" aria-label="Email us at someone@example.com"
-            title="Email us for inquiries or support">
+          <a href="mailto:someone@example.com" aria-label="Email us info@codmsoftware.com"
+            title="Email us info@codmsoftware.com">
             <img src="Image/gmail-logo.png" alt="Gmail" title="Gmail Icon" class="w-7 h-7">
           </a>
           <a href="https://www.linkedin.com/company/codmsoftware/" target="_blank" rel="noopener"
             aria-label="Follow CodmSoftware on LinkedIn" title="Follow CodmSoftware on LinkedIn for updates and news">
-            <img src="Image/linkedin.png" alt="Follow CodmSoftware on LinkedIn for Call of Duty Mobile updates"
-              title="Follow CodmSoftware on LinkedIn" class="w-7 h-7">
+            <img src="Image/linkedin.png" alt="Follow us on LinkedIn" title="Follow us on LinkedIn" class="w-7 h-7">
           </a>
         </div>
         <!-- Contact Numbers -->
@@ -600,7 +598,7 @@
   <!-- </Section> -->
 
 
-  <section class="font-sans bg-gradient-to-r  flex items-center justify-center">
+  <section class="font-sans bg-gradient-to-r flex items-center justify-center z-50">
     <!-- Overlay -->
     <div class="fixed inset-0 hidden bg-black bg-opacity-50 text-2xl" id="overlay" onclick="closePopup()"></div>
 
@@ -620,11 +618,11 @@
           <button onclick="closePopup()"
             class="text-gray-500 text-3xl p-2 transform transition-transform duration-300 hover:scale-125 focus:outline-none">&times;</button>
         </div>
-        <form class="space-y-4"
+        <form class="space-y-4" id="webToLeadForm" target="hidden_iframe"
           action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
           method="POST">
           <input type="hidden" name="oid" value="00DH40000008jfE">
-          <input type="hidden" name="retURL" value="http://google.com">
+          <!-- <input type="hidden" name="retURL" value="thankYouPopup"> -->
 
           <!-- First Name and Last Name -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -680,7 +678,7 @@
 
           <!-- Submit Button -->
           <div class="flex justify-center">
-            <button type="submit"
+            <button type="submit" onclick="submitButton()"
               class="mt-2 px-6 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
               Submit
             </button>
@@ -688,6 +686,7 @@
         </form>
       </div>
     </div>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="showThankYouPopup()"></iframe>
 
     <!-- Thank You Popup -->
     <div id="thankYouPopup"
@@ -695,20 +694,20 @@
       <div class="bg-white w-full max-w-md p-6 rounded-lg shadow-lg text-center">
         <img src="Image/Thankyou.gif" alt="Thank You" title="Thank You to Contact us" class="mx-auto w-32">
         <h2 class="text-2xl font-bold mt-4 text-blue-950">Thank You!</h2>
-        <p class="mt-2">We’ve received your submission! A member of our team will contact you soon to assist you further.</p>
+        <p class="mt-2">We’ve received your submission! A member of our team will contact you soon to assist you
+          further.</p>
         <div class="flex justify-evenly space-x-4 mt-4">
-          <a href="https://x.com/CodMSoftware" target="_blank" aria-label="Follow us on Twitter" 
-          title="Follow us on Twitter for more Updates">
-            <img src="Image/twitter.png" alt="Twitter" 
-            title="Follow on Twitter" class="w-8 h-8">
+          <a href="https://x.com/CodMSoftware" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow us on Twitter" title="Follow us on Twitter for more Updates">
+            <img src="Image/twitter.png" alt="Twitter" title="Follow on Twitter" class="w-8 h-8">
           </a>
           <a href="mailto:someone@example.com" target="_blank" aria-label="Email us info@codmsoftware.com"
-          title="Email us for inquiries or support">
-            <img src="Image/gmail-logo.png" alt="Email us info@codmsoftware.com" 
-            title="Email us info@codmsoftware.com" class="w-8 h-8">
+            title="Email us for inquiries or support">
+            <img src="Image/gmail-logo.png" alt="Email us info@codmsoftware.com" title="Email us info@codmsoftware.com"
+              class="w-8 h-8">
           </a>
-          <a href="https://linkedin.com" target="_blank"  aria-label="Follow CodmSoftware on LinkedIn" 
-          title="Follow on LinkedIn for updates and news">
+          <a href="https://www.linkedin.com/company/codmsoftware/" target="_blank" rel="noopener"
+            aria-label="Follow CodmSoftware on LinkedIn" title="Follow on LinkedIn">
             <img src="Image/linkedin.png" alt="LinkedIn" title="Follow on LinkedIn" class="w-8 h-8">
           </a>
         </div>
@@ -716,8 +715,6 @@
           class="mt-4 bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600">Close</button>
       </div>
     </div>
-
-
 
     <!-- Floating Button -->
     <div class="fixed bottom-6 right-6 z-50 border border-green-500 rounded-full">
@@ -732,48 +729,68 @@
         document.getElementById('popupForm').classList.remove('hidden');
         document.getElementById('overlay').classList.remove('hidden');
       }
-
       function closePopup() {
         document.getElementById('popupForm').classList.add('hidden');
         document.getElementById('overlay').classList.add('hidden');
       }
+      function showThankYouPopup() {
+        document.getElementById('thankYouPopup').classList.remove('hidden');
+      }
+      function closeThankYouPopup() {
+        document.getElementById('thankYouPopup').classList.add('hidden');
+      
+
+        document.getElementById("webToLeadForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+  
+          let formData = new FormData(this);
+     fetch("https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", {
+            method: "POST",
+            body: formData
+        }).then(() => {
+            setTimeout(function() {
+                document.getElementById('thankYouPopup').classList.remove('hidden');
+                document.getElementById("webToLeadForm").style.display = "none";
+                document.getElementById("webToLeadForm").reset();
+            }, 1000); 
+        }).catch(error => {
+            console.error("Error:", error);
+        });
+
+      });
+  
+      function closeThankYouPopup() {
+          document.getElementById('thankYouPopup').classList.add('hidden');
+          document.getElementById("webToLeadForm").style.display = "block";
+      }
+    }
     </script> -->
     <script>
-      // Function to open the form popup
+      // Open Form Popup
       function openPopup() {
         document.getElementById('popupForm').classList.remove('hidden');
         document.getElementById('overlay').classList.remove('hidden');
       }
 
-      // Function to close the form popup
+      // Close Form Popup
       function closePopup() {
         document.getElementById('popupForm').classList.add('hidden');
         document.getElementById('overlay').classList.add('hidden');
       }
 
-      // Function to show the "Thank You" popup
+      // Show "Thank You" Popup after form submission
       function showThankYouPopup() {
         document.getElementById('thankYouPopup').classList.remove('hidden');
+        document.getElementById('popupForm').classList.add('hidden'); // Hide form after submission
       }
 
-      // Function to close the "Thank You" popup
+      // Close "Thank You" Popup
       function closeThankYouPopup() {
         document.getElementById('thankYouPopup').classList.add('hidden');
+        document.getElementById("webToLeadForm").reset(); // Clear form inputs
       }
-
-      // Handle form submission
-      document.querySelector('form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Simulate form submission (you can replace this with actual form submission logic)
-        setTimeout(function () {
-          closePopup(); // Close the form popup
-          showThankYouPopup(); // Show the "Thank You" popup
-        }, 1000); // Simulate a 1-second delay for form submission
-      });
     </script>
   </section>
-
 
   <!-- New Products Section -->
   <section id="our-product" class="px-4 py-10 bg-gray-50 text-center">

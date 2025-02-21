@@ -208,42 +208,14 @@ startAutoScroll();
   });
 
 
-  // Infinite Scroll Horizontal Gallery
-        const animals = [
-            { name: "Administrator", scientific: "Certificate", image: "Image/Administrator.png" },
-            { name: "OmniStudio Consultant", scientific: "Certificates", image: "Image/OmniStudio-Consultant.png" },
-            { name: "Service Cloud Consultant", scientific: "Certificates", image: "Image/Service-Cloud-Consultant.png" },
-            { name: "Platform developer I", scientific: "Certificates", image: "Image/Platform-Developer-1.png" },
-            { name: "Application Architect", scientific: "Certificate", image: "Image/Application-Architect.png" },
-            { name: "B2C Solution Architect", scientific: "Certificates", image: "Image/B2C-Solution-Architect-2-1024x1004.png" },
-            { name: "Business Analyst", scientific: "Certificates", image: "Image/buisness analyst.png" },
-            { name: "Platform Developer II", scientific: "Certificates", image: "Image/Platform-Developer-II.png" },
-            { name: "Platform App Builder", scientific: "Certificates", image: "Image/Platform-App-Builder.png" },
-            { name: "Data Architect", scientific: "Certificates", image: "Image/Data Architect.png" },
-            { name: "CPQ Specialist", scientific: "Certificates", image: "Image/CPQ-Specialist.png" },
-            { name: "OmniStudio Consultant", scientific: "Certificates", image: "Image/OmniStudio-Consultant.png" }
-        ];
-        let index = 0;
-
-        function updateSlide() {
-            document.getElementById("carousel-image").src = animals[index].image;
-            document.getElementById("carousel-title").innerText = animals[index].name;
-            document.getElementById("carousel-scientific").innerText = animals[index].scientific;
-            document.getElementById("carousel-index").innerText = `${index + 1}/${animals.length}`;
-        }
-
-        function nextSlide() {
-            index = (index + 1) % animals.length;
-            updateSlide();
-        }
-
-        function prevSlide() {
-            index = (index - 1 + animals.length) % animals.length;
-            updateSlide();
-        }
 
 
 
+
+
+
+
+        
 
 
       
